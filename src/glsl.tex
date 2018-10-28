@@ -1,0 +1,192 @@
+\begin{frame}
+\frametitle{Jazyk GLSL}
+  \begin{itemize}
+  \item GLSL - OpenGL Shading Language
+  \item Slouží pro popis programů, které běží na GPU
+  \item Je odvozený od C
+  \item Neobsahuje rekurzi, třídy, výjimky, std knihovny
+  \item Obsahuje vektorové a maticové typy, vestavěné funkce, vestavěné proměnné, synchronizační funkce, typové kvalifikátory, rozšířené adresování vektorů
+  \item Každý shader musí obsahovat main funkci
+  \item Každá main funkce je vykonávána v mnoha instancích v dané části pipeline
+  \item Některé části pipeline mají speciální nastavení
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Jazyk GLSL - příklad typy}
+		{\scriptsize
+\begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
+#version 450
+
+void main(){
+  //32 bit integer
+  int a;
+  //32 bit unsigned integer
+  uint b;
+  //32 bit float
+  float c;
+  //vector of 4 ints
+  ivec4 d;
+  //vector of 3 floats
+  vec3 e = vec3(1,2,3);
+  //matrix 3x3 of floats
+  mat3 m;
+  //zeroth element of e
+  e[0] == e.x == e.r;
+  //swizzling 
+  vec2 f = e.xy; // (1,2)
+  f = e.zz; // (3,3)
+  //matrix vector multiplication
+  e = m*e;
+  //constructing ivec4 from vec3 and scalar
+  d = ivec4(c,4);
+  d = ivec4(c.xx,c.yy);
+}
+		\end{minted}
+		}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Jazyk GLSL - vestavěné funkce}
+{\tiny
+\begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
+abs acos acosh asin asinh atan atanh ceil cos cosh degrees exp exp2 floor fract inversesqrt
+log log2 max min mod modf pow radians round roundEven sign sin sinh sqrt tan tanh trunc
+clamp cross distance dot floatBitsToInt floatBitsToUint fma frexp intBitsToFloat isinf
+isnan ldexp length mix normalize smoothstep step
+
+packDouble2x32 packSnorm4x8 packUnorm2x16 packSnorm2x16
+packUnorm4x8 uintBitsToFloat unpackDouble2x32 unpackSnorm4x8 unpackUnorm2x16 
+unpackSnorm2x16 unpackUnorm4x8 packHalf2x16 unpackHalf2x16
+
+all any bitCount bitfieldExtract bitfieldInsert bitfieldReverse determinant equal
+faceforward findLSB findMSB greaterThan greaterThanEqual imulExtended inverse lessThan
+lessThanEqual matrixCompMult not notEqual outerProduct reflect refract transpose uaddCarry
+umulExtended usubBorrow 
+
+textureSize textureQueryLod texture textureProj textureLod 
+textureOffset texelFetch texelFetchOffset textureProjOffset textureLodOffset textureProjLod 
+textureProjLodOffset textureGrad textureGradOffset textureProjGrad textureProjGradOffset 
+textureGather textureGatherOffset textureGatherOffsets textureQueryLevels
+
+dFdx dFdy fwidth
+interpolateAtCentroid interpolateAtOffset interpolateAtSample
+
+noise1 noise2 noise3 noise4
+
+EmitStreamVertex EndStreamPrimitive EmitVertex EndPrimitive
+
+barrier memoryBarrier 
+memoryBarrierAtomicCounter memoryBarrierBuffer memoryBarrierImage memoryBarrierShared 
+groupMemoryBarrier
+imageSize
+
+atomicAdd atomicMin atomicMax atomicAnd atomicOr atomicXor atomicExchange atomicCompSwap
+
+imageSize imageLoad imageStore imageAtomicAdd imageAtomicMin imageAtomicMax
+imageAtomicAnd imageAtomicOr imageAtomicXor imageAtomicExchange imageAtomicCompSwap
+\end{minted}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Jazyk GLSL - kvalifikátory proměnných}
+{\tiny
+\begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
+#version 450
+
+//promenna a je plnena predchazejici shader stage nebo
+//z bufferu GL_ARRAY_BUFFER
+//read only
+in vec4 a;
+
+//hodnota b bude viditelna v dalsi shader stage nebo
+//ve framebufferu
+//write only
+out vec4 b;
+
+//hodnoty promennych a,b se meni s kazdou invokaci shaderu
+
+//promenna m je ulozena v konstantni pameti, lze ji vycist 
+//ve vsech shader stage
+//read only
+uniform mat4 m;
+
+//hodnota m je nemenna pro vsechny invokace shaderu
+
+//promenna d je typu textury (obrazek), je to opaque type, ktery
+//lze cist jen pomoci specialnich funkci
+//read only
+uniform sampler2D d;
+
+//promenna e je lokalni, je ulozena v registru, kazda 
+//invokace shaderu ma svoji vlastni
+vec4 e = vec4(0,1,2,3);
+
+void main(){
+  b = e + m * texture(d,a.xy);
+}
+\end{minted}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Jazyk GLSL - důležité vestavěné proměnné}
+Vertex Shader obsahuje několik důležitých vestavěných proměnných
+{\scriptsize
+\begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
+#version 450
+
+void main(){
+  //vystupni promenna, sem se zapisuje pozice vrcholu
+  //po perspektivni projekci
+  vec4 gl_Position;
+
+  //cislo vrcholu
+  in int gl_VertexID;
+  //cislo instsance
+  in int gl_InstanceID;
+  //cislo draw callu
+  in int gl_DrawID;
+  //velikost primitiva typu bod
+  out float gl_PointSize;
+  out float gl_ClipDistance[];
+  out float gl_CullDistance[];
+}
+
+\end{minted}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Jazyk GLSL - důležité vestavěné proměnné}
+Fragment Shader obsahuje několik důležitých vestavěných proměnných.
+Výstup fragment shaderu si specifikuje programátor pomocí vlastní výstupní proměnné.
+{\scriptsize
+\begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
+#version 450
+
+//vlastni vystup, namapuje se na 0. barevny framebuffer
+layout(location=0)out vec4 fColor;
+
+void main(){
+  //coordinaty fragmentu ve viewportu
+  in vec4 gl_FragCoord;
+
+  //vznikl fragment z privracene strany primitiva
+  in bool gl_FrontFacing;
+
+  //pro modifikaci hloubky fragmentu
+  //pri zapisu vypina brzky depth test
+  out float gl_FragDepth;
+
+  in float gl_ClipDistance[];
+  in float gl_CullDistance[];
+  in int gl_PrimitiveID;
+
+}
+
+\end{minted}
+}
+\end{frame}
+

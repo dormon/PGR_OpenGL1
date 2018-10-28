@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500.67737"
+   height="216.22527"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path4161"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="222.16205"
+     inkscape:cy="114.36385"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1919"
+     inkscape:window-height="1051"
+     inkscape:window-x="1"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-93.08929,-170.99721)">
+    <g
+       id="g4679">
+      <g
+         id="g4649">
+        <g
+           id="g3950"
+           transform="translate(1.6583633,7.5349731)">
+          <rect
+             ry="0.1813937"
+             y="339.93747"
+             x="183.25038"
+             height="39.249001"
+             width="39.249001"
+             id="rect2985-7"
+             style="color:#000000;fill:#ffaaaa;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text3759"
+             y="363.93015"
+             x="190.85144"
+             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             xml:space="preserve"><tspan
+               y="363.93015"
+               x="190.85144"
+               id="tspan3761"
+               sodipodi:role="line">CPU</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="95.000008"
+           y="181.29077"
+           id="text3791"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3793"
+             x="95.000008"
+             y="181.29077">C++</tspan></text>
+        <g
+           id="g3864"
+           transform="translate(-121.78571,-23.214286)">
+          <path
+             sodipodi:nodetypes="ccccccc"
+             inkscape:connector-curvature="0"
+             id="path3803"
+             d="m 215.36228,208.40386 0,116.32566 221.70837,0 0,-102.57188 -30.39161,0 -0.17567,-14.00561 z"
+             style="fill:#ffccaa;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <path
+             sodipodi:nodetypes="cc"
+             inkscape:connector-curvature="0"
+             id="path3805"
+             d="m 406.32734,208.23597 30.94829,13.59923"
+             style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="101.06911"
+           y="212.03398"
+           id="text3807"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3809"
+             x="101.06911"
+             y="212.03398"
+             style="fill:#ff00ff">#include&lt;iostream&gt;</tspan><tspan
+             sodipodi:role="line"
+             x="101.06911"
+             y="227.03398"
+             id="tspan3819"><tspan
+   style="fill:#008000"
+   id="tspan3825">int</tspan> main(<tspan
+   style="fill:#008000"
+   id="tspan3827">int</tspan> argc,<tspan
+   style="fill:#008000"
+   id="tspan3829">char</tspan>*argv[]){</tspan><tspan
+             sodipodi:role="line"
+             x="101.06911"
+             y="242.03398"
+             id="tspan3813"><tspan
+   style="fill:#0000ff"
+   id="tspan4647">  glCompileShader</tspan>(shaderID);</tspan><tspan
+             sodipodi:role="line"
+             x="101.06911"
+             y="257.034"
+             id="tspan3815"><tspan
+   style="fill:#0000ff"
+   id="tspan3833">  glLinkProgram</tspan>(programID);</tspan><tspan
+             sodipodi:role="line"
+             x="101.06911"
+             y="272.034"
+             id="tspan3817"><tspan
+   style="fill:#0000ff"
+   id="tspan4645">  glUseProgram</tspan>(programID);</tspan><tspan
+             sodipodi:role="line"
+             x="101.06911"
+             y="287.034"
+             id="tspan3811">}</tspan></text>
+        <g
+           id="g4040">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4008"
+             d="m 206.07112,341.71987 c 7.99712,-16.17092 28.83905,-33.33504 49.49747,-33.33504"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4008-1"
+             d="M 203.79827,341.71987 C 195.80115,325.54895 174.95922,308.38483 154.3008,308.38483"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="229.30463"
+           y="329.09296"
+           id="text4068"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4070"
+             x="229.30463"
+             y="329.09296">jedna instance</tspan><tspan
+             sodipodi:role="line"
+             x="229.30463"
+             y="344.09296"
+             id="tspan4074">programu</tspan></text>
+      </g>
+      <g
+         transform="translate(34,0)"
+         id="g4084">
+        <g
+           id="g3982"
+           transform="translate(-8.5284775,0)">
+          <rect
+             ry="0.1813937"
+             y="347.47244"
+             x="423.89017"
+             height="39.249001"
+             width="39.249001"
+             id="rect2985"
+             style="color:#000000;fill:#ffdd55;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text3755"
+             y="371.46512"
+             x="431.03421"
+             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             xml:space="preserve"><tspan
+               y="371.46512"
+               x="431.03421"
+               id="tspan3757"
+               sodipodi:role="line">GPU</tspan></text>
+        </g>
+        <g
+           id="g3987"
+           transform="translate(0,0.446304)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text3795"
+             y="179.45715"
+             x="323.68015"
+             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             xml:space="preserve"><tspan
+               y="179.45715"
+               x="323.68015"
+               id="tspan3797"
+               sodipodi:role="line">GLSL</tspan></text>
+          <path
+             sodipodi:nodetypes="ccccccc"
+             inkscape:connector-curvature="0"
+             id="path3803-2"
+             d="m 322.29303,184.75069 0,116.31824 225.17814,0 0,-102.56533 -30.86724,0 -0.17843,-14.00473 z"
+             style="fill:#ffeeaa;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <path
+             sodipodi:nodetypes="cc"
+             inkscape:connector-curvature="0"
+             id="path3805-8"
+             d="m 516.24672,184.58281 31.43263,13.59837"
+             style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text3887"
+             y="201.81374"
+             x="330.31989"
+             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             xml:space="preserve"><tspan
+               style="fill:#ff00ff"
+               y="201.81374"
+               x="330.31989"
+               id="tspan3889"
+               sodipodi:role="line">#version 450</tspan><tspan
+               id="tspan3901"
+               y="216.81374"
+               x="330.31989"
+               sodipodi:role="line"><tspan
+   id="tspan3903"
+   style="fill:#008000">layout</tspan>(<tspan
+   id="tspan3905"
+   style="fill:#ff6600">location</tspan>=<tspan
+   id="tspan3921"
+   style="fill:#ff0000">0</tspan>)<tspan
+   id="tspan3913"
+   style="fill:#008000">in vec4</tspan> position;</tspan><tspan
+               id="tspan3891"
+               y="231.81374"
+               x="330.31989"
+               sodipodi:role="line"><tspan
+   id="tspan3907"
+   style="fill:#008000">uniform mat4</tspan> mvp;</tspan><tspan
+               id="tspan3893"
+               y="246.81374"
+               x="330.31989"
+               sodipodi:role="line" /><tspan
+               id="tspan3895"
+               y="261.81372"
+               x="330.31989"
+               sodipodi:role="line"><tspan
+   id="tspan3915"
+   style="fill:#008000">void</tspan> main(){</tspan><tspan
+               id="tspan3899"
+               y="276.81372"
+               x="330.31989"
+               sodipodi:role="line"><tspan
+   id="tspan3919"
+   style="fill:#008000">  gl_Position</tspan> = mvp * position;</tspan><tspan
+               id="tspan3897"
+               y="291.81372"
+               x="330.31989"
+               sodipodi:role="line">}</tspan></text>
+        </g>
+        <g
+           transform="translate(228.92583,-1.0101533)"
+           id="g4040-9">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4008-9"
+             d="m 206.07112,341.71987 c 7.99712,-16.17092 28.83905,-33.33504 49.49747,-33.33504"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4008-1-4"
+             d="M 203.79827,341.71987 C 195.80115,325.54895 174.95922,308.38483 154.3008,308.38483"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="461.63971"
+           y="327.57773"
+           id="text4078"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4080"
+             x="461.63971"
+             y="327.57773">spousta instancí</tspan><tspan
+             sodipodi:role="line"
+             x="461.63971"
+             y="342.57773"
+             id="tspan4082">programu</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4146"
+         d="m 224.64286,366.6479 223.21428,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4592"
+         y="363.07645"
+         x="327.14285"
+         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="363.07645"
+           x="327.14285"
+           id="tspan4594"
+           sodipodi:role="line">PCIe</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4596"
+         y="382.36218"
+         x="278.21426"
+         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="382.36218"
+           x="278.21426"
+           id="tspan4598"
+           sodipodi:role="line">řízení, spouštění úloh</tspan></text>
+    </g>
+  </g>
+</svg>

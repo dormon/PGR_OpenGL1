@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="360.65485mm"
+   height="145.46951mm"
+   viewBox="0 0 360.65485 145.46951"
+   version="1.1"
+   id="svg14559"
+   inkscape:version="0.92.2 (unknown)"
+   sodipodi:docname="RenderingPipelineVectorRaster.svg">
+  <defs
+     id="defs14553">
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send-62-3"
+       style="overflow:visible">
+      <path
+         id="path3703-9-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;marker-start:none"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send-61-6-7"
+       style="overflow:visible">
+      <path
+         id="path3703-06-0-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;marker-start:none"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send-6"
+       style="overflow:visible">
+      <path
+         id="path3703-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;marker-start:none"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Sstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4403"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="422.98107"
+     inkscape:cy="-79.382714"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1919"
+     inkscape:window-height="1051"
+     inkscape:window-x="1"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata14556">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(126.65481,17.639519)">
+    <g
+       id="g13425"
+       transform="matrix(0.26458333,0,0,0.26458333,343.70347,187.26404)">
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;stroke:#000000;stroke-width:2.24865246;marker:none;enable-background:accumulate"
+         id="rect38743-5-5-2-9"
+         width="1360.8563"
+         height="547.55737"
+         x="-1776.6078"
+         y="-773.31433" />
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ddff55;stroke:#000000;stroke-width:0.74828833;marker:none;enable-background:accumulate"
+         id="rect38743-3-9"
+         width="220.47937"
+         height="510.33716"
+         x="-1756.5895"
+         y="-754.70593" />
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#d5fff6;stroke:#000000;stroke-width:0.74750566;marker:none;enable-background:accumulate"
+         id="rect38743-2-2-1"
+         width="1070.3208"
+         height="510.33795"
+         x="-1506.0903"
+         y="-754.70294" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-width:6.01277018;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-62-3)"
+         d="m -1494.8468,-361.57088 h -34.1652"
+         id="path36764-2-9" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="-1733.1152"
+         y="-488.60974"
+         id="text38745-7-4"><tspan
+           sodipodi:role="line"
+           id="tspan38747-2-2"
+           x="-1733.1152"
+           y="-488.60974"
+           style="font-size:41.94889069px;line-height:1.25;font-family:sans-serif">Memory</tspan></text>
+      <path
+         id="path8115-3-8-0"
+         d="m -1537.3553,-675.45863 h 34.1652"
+         style="fill:none;stroke:#000000;stroke-width:6.01277018;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-61-6-7)"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:23.04442215px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.92036855"
+         x="-1487.8235"
+         y="-482.57358"
+         id="text38745-2-6-6"><tspan
+           sodipodi:role="line"
+           id="tspan38747-0-9-5"
+           x="-1487.8235"
+           y="-482.57358"
+           style="font-size:79.78551483px;line-height:1.25;font-family:sans-serif;stroke-width:1.92036855">Rendering Pipeline</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path13308"
+         d="m -632.57526,-676.54735 h 91.92388 v 109.09649"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-6)" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path13310"
+         d="m -631.56511,-350.77314 h 91.92388 v -127.78429"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart)" />
+      <g
+         id="g13360">
+        <rect
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#fff6d5;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;paint-order:stroke fill markers;enable-background:accumulate"
+           id="rect8458-5"
+           width="238.85991"
+           height="79.571815"
+           x="-704.27502"
+           y="-560.58423" />
+        <text
+           id="text38745-2-6-6-6"
+           y="-506.19333"
+           x="-699.54266"
+           style="font-style:normal;font-weight:normal;font-size:11.31525707px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.94293809"
+           xml:space="preserve"><tspan
+             style="font-size:39.17623138px;line-height:1.25;font-family:sans-serif;stroke-width:0.94293809"
+             y="-506.19333"
+             x="-699.54266"
+             id="tspan38747-0-9-5-1"
+             sodipodi:role="line">Rasterizace</tspan></text>
+      </g>
+      <g
+         id="g13400">
+        <rect
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#fff6d5;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;paint-order:stroke fill markers;enable-background:accumulate"
+           id="rect8458"
+           width="857.61951"
+           height="101.01524"
+           x="-1491.71"
+           y="-723.51947" />
+        <text
+           id="text38745-2-6-6-1"
+           y="-641.67035"
+           x="-1357.7716"
+           style="font-style:normal;font-weight:normal;font-size:23.04442215px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.92036855"
+           xml:space="preserve"><tspan
+             style="font-size:79.78551483px;line-height:1.25;font-family:sans-serif;stroke-width:1.92036855"
+             y="-641.67035"
+             x="-1357.7716"
+             id="tspan38747-0-9-5-4"
+             sodipodi:role="line">Vektorová část</tspan></text>
+      </g>
+      <g
+         id="g13395">
+        <rect
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#fff6d5;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;paint-order:stroke fill markers;enable-background:accumulate"
+           id="rect8458-9"
+           width="857.61951"
+           height="101.01524"
+           x="-1491.3783"
+           y="-405.44391" />
+        <text
+           id="text38745-2-6-6-1-3"
+           y="-323.59476"
+           x="-1336.9677"
+           style="font-style:normal;font-weight:normal;font-size:23.04442215px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.92036855"
+           xml:space="preserve"><tspan
+             style="font-size:79.78551483px;line-height:1.25;font-family:sans-serif;stroke-width:1.92036855"
+             y="-323.59476"
+             x="-1336.9677"
+             id="tspan38747-0-9-5-4-7"
+             sodipodi:role="line">Rastrová část</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

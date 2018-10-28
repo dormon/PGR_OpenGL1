@@ -1,0 +1,64 @@
+\bluepage{Příprava bufferů}
+
+\begin{frame}
+\frametitle{Buffery}
+  \begin{itemize}
+  \item Buffer je objekt zastřešující lineární paměť na GPU
+  \item Může obsahovat jakákoliv data
+  \item Nejčastěji se používá pro uložení vrcholů geometrie (a jejich vlastností), indexů na vrcholy a materiálů
+  \item Buffer lze připojit na několik přípojných míst OpenGL pipeline (binding points)
+  \item Binding point udává sémantiku bufferu
+  \item Pro vrcholy se používá \textcolor{red}{GL\_ARRAY\_BUFFER}, buffer se pak nazývá Vertex Buffer Object (VBO)
+  \item Pro indexy se používá \textcolor{red}{GL\_ELEMENT\_ARRAY\_BUFFER}, Element Buffer Object (EBO)
+  \item Pro obecná data se používá \textcolor{red}{GL\_SHADER\_STORAGE\_BUFFER}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{OpenGL 4.6 pipeline}
+  \begin{figure}[h]
+  \includegraphics[width=10cm,keepaspectratio]{pics/pipeline/OpenGL460Pipeline}
+  \end{figure}
+\end{frame}
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\begin{frame}[fragile]
+\frametitle{Vytvoření buffer, nahrání dat}
+Vytvoření bufferu.
+    {\scriptsize
+\begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
+float data[]={1,2};//data, ktera budeme vkladat do bufferu
+GLuint vbo;//identifikator VBO
+glCreateBuffers(1,&vbo);
+//alokujeme buffer a nahrajeme do nej data
+glNamedBufferData(vbo,sizeof(data),data,GL_STATIC_DRAW);
+    \end{minted}
+    }
+    Změna dat ve VBO.
+    {\scriptsize
+  \begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
+float*ptr;//ukazatel na data
+ptr=(float*)glMapNamedBuffer(vbo,GL_READ_WRITE);//namapujeme buffer
+ptr[0]=0.5;//nastavime hodnotu prvniho prvku
+glUnmapNamedBuffer(vbo);//odmapujeme buffer, komitujeme zmeny do GPU
+\end{minted}
+    }
+    Nebo pomoci {\color{blue} glNamedBufferSubData}.
+    {\scriptsize
+\begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
+glNamedBufferSubData(vbo,
+  sizeof(float),//nahrajeme nova s offsetem jeden float
+  sizeof(float),//nahrajeme jen jeden float
+  data);//data
+    \end{minted}
+    }
+    Nabindování bufferu.
+    {\scriptsize
+\begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
+glBindBuffer(GL_ARRAY_BUFFER,vbo);
+    \end{minted}
+    }
+\end{frame}
+
+

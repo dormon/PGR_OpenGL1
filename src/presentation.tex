@@ -1,0 +1,64 @@
+\documentclass[10pt,xcolor=pdflatex,dvipsnames,table]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+\usepackage[shorthands=off,czech]{babel}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{minted}
+%\usepackage{packages/beamerthemeFIT}
+
+\makeatletter
+  \def\beamer@calltheme#1#2#3{%
+    \def\beamer@themelist{#2}
+    \@for\beamer@themename:=\beamer@themelist\do
+    {\usepackage[{#1}]{\beamer@themelocation/#3\beamer@themename}}}
+
+  \def\usefolder#1{
+    \def\beamer@themelocation{#1}
+  }
+  \def\beamer@themelocation{}
+
+\usefolder{packages}
+\usetheme{FIT}
+
+\title[OpenGL]{PGR - GPU, Rendering pipeline, OpenGL}
+
+\author[]{Tomáš Milet}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+imilet@fit.vutbr.cz}
+
+\date{\today}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\input{src/gpu}
+\input{src/model}
+\input{src/pipeline}
+\input{src/opengl}
+\input{src/program}
+\input{src/glsl}
+\input{src/buffer}
+\input{src/vao}
+\input{src/draw}
+\input{src/pfo}
+\input{src/context}
+%
+%\input{src/references}
+
+\bluepage{Thank you for your attention! \vspace{10 mm} Questions?}
+
+\end{document}

@@ -1,0 +1,85 @@
+\bluepage{Kreslení a uniformní proměnné}
+
+\begin{frame}[fragile]
+\frametitle{Uniformní proměnné}
+  \begin{itemize}
+  \item Uniformní proměnné jsou uloženy v konstantní paměti
+  \item Narozdíl od vertex atributů se v průběhu kreslení nemění
+  \item Každá invokace shaderu adresuje stejnou hodnotu
+  \item Uniformní proměnné lze využít ve všech shader stage
+  \item Uniformní proměnné jsou vhodné například pro uložení matic, barvy, světla
+  \item Stejně jako objekty v OpenGL zastupuje integerová hodnota, tak i každá uniformní proměnná má svoje integerové jméno
+  \item Toto jméno lze získat z Shader Programu pomocí specializovaných funkcí
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Způsob využívání uniformních proměnných}
+  \begin{enumerate}
+  \item Vytvoření Shader Programu
+  \item Získání integerového jména pomocí jména proměnné v shaderu
+  \item Aktivování Shader Programu
+  \item Nahrání dat pomocí vhodné OpenGL funkce
+  \end{enumerate}
+{\scriptsize
+\begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
+GLuint program = 0;
+GLint  colorUniform = -1;
+void init(){
+  //sestaveni programu
+  program = createProgram(
+      compileShader(GL_VERTEX_SHADER  ,loadFile("flag.vp")),
+      compileShader(GL_FRAGMENT_SHADER,loadFile("flag.fp")));
+  //ziskani integeroveho jmena z promenne "color" v shaderu
+  colorUniform = glGetUniformLocation(program,"color");
+}
+\end{minted}
+}
+{\scriptsize
+\begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
+#verion 450
+
+layout(location=0)out vec4 fColor;
+uniform vec3 color;//uniformni promenna
+void main(){
+  fColor = vec4(color,1);
+}
+\end{minted}
+}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Vykreslení dat}
+  \begin{enumerate}
+  \item Aktivování programu
+  \item Nastavení uniformních proměnných
+  \item Aktivování Vertex Array Objectu
+  \item Zavolání vykreslovacího příkazu
+  \end{enumerate}
+{\scriptsize
+\begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
+void draw(){
+  //vymazani barevneho framebuffer
+  glClear(GL_COLOR_BUFFER_BIT);
+
+  //aktivovani program
+  glUseProgram(program);
+
+  //nastaveni uniformni promenne
+  glProgramUniform3fv(program,colorUniform,1,0,0);
+
+  //aktivovani vao
+  glBindVertexArray(vao);
+
+  glDrawArrays(//vykresleni
+    GL_TRIANGLES,//typ primitiva
+    0,//prvni Vertex
+    3);//pocet Vertexu pro vykresleni 3 -> 1 trojuhelnik
+
+  //deaktivovani vao
+  glBindVertexArray(0);
+\end{minted}
+}
+\end{frame}
+
