@@ -28,6 +28,22 @@ introductionImages = \
 	pics/pipeline/barycentrickekoordinaty.pdf\
 	pics/pipeline/interpolace.pdf\
 	pics/pipeline/prespektivni_korekce.pdf\
+	pics/pipeline/simplified_pipeline.pdf\
+	pics/pipeline/vertex.pdf\
+	pics/pipeline/vertexAssembly.pdf\
+	pics/pipeline/drawElements.pdf\
+	pics/pipeline/vertexShader.pdf\
+  pics/pipeline/PrimitiveAssembly.pdf\
+  pics/pipeline/culling.pdf\
+  pics/pipeline/clip.pdf\
+  pics/pipeline/clip_variants.pdf\
+  pics/pipeline/PerspectiveDivision.pdf\
+  pics/pipeline/ViewportTransformation.pdf\
+  pics/pipeline/rasterization.pdf\
+  pics/pipeline/interpolation.pdf\
+  pics/pipeline/barycentric2D.pdf\
+  pics/pipeline/FragmentShader.pdf\
+  pics/pipeline/PFO.pdf\
 	pics/program/cpp_and_glsl.pdf\
 	pics/program/shader_combination.pdf\
 	pics/vao/puller0.pdf\

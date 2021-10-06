@@ -6,7 +6,7 @@
 		\item GPU je rozděleno na paměť a vykreslovací řetěžec.
 	\end{itemize}
 	\begin{picture}(320,250)
-		\put(-25,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineMemoryPipeline}}
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineMemoryPipeline}}
 	\end{picture}
 \end{frame}
 
@@ -17,7 +17,7 @@
     \item Dělícím prvkem je rasterizace.
 	\end{itemize}
 	\begin{picture}(320,250)
-		\put(-25,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVectorRaster}}
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVectorRaster}}
 	\end{picture}
 \end{frame}
 
@@ -29,27 +29,148 @@
     \item Některé bloky jsou programovatelné a některé vynechatelné.
 	\end{itemize}
 	\begin{picture}(320,250)
-		\put(-25,60){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVector}}
+		\put(0,60){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVector}}
 	\end{picture}
 \end{frame}
 
 \begin{frame}
-\frametitle{Vertex puller, vertex processor, primitive assembly}
+\frametitle{Zlednodušená Vektorová část}
 	\begin{itemize}
-		\item Vertex puller sestavuje vrcholy, vertex processro transformuje vrcholy, primitive assembly sestavuje primitiva.
+		\item Pokud vynecháme volitelné bloky, zůstane zjednodušená vektorová část řetězce.
 	\end{itemize}
 	\begin{picture}(320,250)
-		\put(-25,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineVertexShader}}
+		\put(0,60){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/simplified_pipeline}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vertex Assembly, vertex processor, primitive assembly}
+	\begin{itemize}
+		\item Vertex Assembly sestavuje vrcholy
+    \item Vertex processor transformuje vrcholy
+    \item Primitive assembly sestavuje primitiva.
+	\end{itemize}
+	\begin{picture}(320,250)
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineVertexShader}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vertex, Vertex Assembly}
+	\begin{itemize}
+		\item Vertex je kolekce atributů
+    \item Vertex Assembly jednotka se stará o sestavování vrcholů z bufferů.
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(0,0){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/vertex}}
+	\end{picture}
+	\begin{picture}(60,40)
+		\put(50,0){\includegraphics[width=8cm,keepaspectratio]{pics/pipeline/vertexAssembly}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vertex Assembly - indexované kreslení}
+	\begin{itemize}
+		\item Vertex Assembly může využít indexování
+    \item Vertex Cache
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(25,0){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/drawElements}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vertex Processor}
+	\begin{itemize}
+		\item Ve Vertex Processoru běží vertex shader.
+    \item Vertex Shader je uživatelem specifikovaný program.
+    \item Cílem je transformovat vstupní vrchol na výstupní vrchol.
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(25,0){\includegraphics[width=10.5cm,keepaspectratio]{pics/pipeline/vertexShader}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Primitive Assembly}
+	\begin{itemize}
+		\item Primitive Assembly jednotka sestavuje primitiva.
+    \item Cílem je podle nastavení sestavovat trojúhelníky, úsečky, vrcholy.
+    \item Základní primitiva (trojúhleník, úsečka) mohou být součástí složitějších primitive.
+    \item Triangle Strip, Triangle Fan, Line Strip, Triangle Adjacency, Patch, ...
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(25,0){\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/PrimitiveAssembly}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Culling, clipping}
+	\begin{itemize}
+		\item Těsně před raterizací se zahazují odvrácené trojúhelníky a zbylé se ořezávají pohledovým frustem.
+	\end{itemize}
+	\begin{picture}(320,250)
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineClipping}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Culling}
+	\begin{itemize}
+		\item Culling se stará o zahazování odvrácených trojúhelníků.
+    \item Odvrácenost je rozhodnuta na základě pořadí vrcholů.
+    \item Je možné nastavit, jestli je trojúhelník přivrácený nebo odvrácený, pokud jsou vrcholy po nebo proti směru hodinových ručiček.
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(25,25){\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/culling}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Clipping, near-plane clipping}
+	\begin{itemize}
+		\item Pokud je primitivum jen částečně uvnitř pohledového jehlanu, je potřeba jej oříznout.
+    \item Obvykle stačí oříznout pomocí blízké ořezové roviny (near-plane).
+    \item Pokud vznikne čtyčúhelník, je možné jej nahradit dvěma trojúhelníky.
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(0,0){\includegraphics[width=4.5cm,keepaspectratio]{pics/pipeline/clip}}
+	\end{picture}
+	\begin{picture}(60,40)
+		\put(25,0){\includegraphics[width=4cm,keepaspectratio]{pics/pipeline/clip_variants}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Perspektivní dělení}
+	\begin{itemize}
+		\item Blok perspektivního dělení převádí homogenní souřadnice na kartézské.
+    \item Dělí se pomocí W, ve kterém je uložena hloubka. Tím se zmenšují objekty, které jsou dál od kamera.
+    \item Po perspekvitním dělení všechny vrcholy leží v rozsahu $[-1,+1]$ - normalized device coordinates.
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(50,0){\includegraphics[width=6.5cm,keepaspectratio]{pics/pipeline/PerspectiveDivision}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Viewport transformace}
+	\begin{itemize}
+		\item Blok viewport transformace transformuje normalizované souřadnice na rozlišení plátna.
+	\end{itemize}
+	\begin{picture}(120,150)
+		\put(50,0){\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/ViewportTransformation}}
 	\end{picture}
 \end{frame}
 
 \begin{frame}
 \frametitle{Teselace}
 	\begin{itemize}
-		\item Tesselace je složena zde 2 programovatelných processorů.
+		\item Tesselace je složena zde 2 programovatelných processorů a hardwarového generátoru primitiv.
 	\end{itemize}
 	\begin{picture}(320,250)
-		\put(-25,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineTessellationShaders}}
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineTessellationShaders}}
 	\end{picture}
 \end{frame}
 
@@ -60,20 +181,23 @@
     \item Transform feedback může primitiva přeposlat zpět do bufferu.
 	\end{itemize}
 	\begin{picture}(320,250)
-		\put(-25,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineGeometryShader}}
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineGeometryShader}}
 	\end{picture}
 \end{frame}
 
 \begin{frame}
-\frametitle{Culling, clipping}
+\frametitle{Rasterizace}
 	\begin{itemize}
-		\item Těsně před raterizací se zahazují odvrácené trojúhelníky a zbylé se ořezávají pohledovým frustem.
+		\item Rasterizace produkuje fragmenty.
+    \item Fragment je datová struktura, která vznikne na pozici vzorku (sampling point).
+    \item Vzorkovací bod je obvykle uprostřed pixelu.
+    \item Situace je komplikovanější při využití multi-samplingu.
+    \item Pokud leží vzorkovací bod uvnitř trojúhelníku, vznikne fragment pro daný pixel.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(-25,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineClipping}}
-	\end{picture}
+	\begin{figure}[h]
+		\includegraphics[width=10cm,keepaspectratio]{pics/pipeline/rasterization.pdf}
+	\end{figure}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Rasterizace a interpolace}
@@ -83,14 +207,21 @@
     \item Po rasterizaci jsou tyto atributy vloženy do fragmetů pomocí interpolace
 	\end{itemize}
 	\begin{figure}[h]
-		\includegraphics[width=10cm,keepaspectratio]{pics/pipeline/interpolace.pdf}
+		\includegraphics[width=10cm,keepaspectratio]{pics/pipeline/interpolation.pdf}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Barycentrické koordináty}
 	\begin{figure}[h]
-		\includegraphics[width=10cm,keepaspectratio]{pics/pipeline/barycentrickekoordinaty.pdf}
+		\includegraphics[width=8cm,keepaspectratio]{pics/pipeline/barycentrickekoordinaty.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Barycentrické koordináty ve 2D}
+	\begin{figure}[h]
+		\includegraphics[width=8cm,keepaspectratio]{pics/pipeline/barycentric2D.pdf}
 	\end{figure}
 \end{frame}
 
@@ -106,21 +237,39 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}
+\frametitle{Fragment Processor}
+	\begin{itemize}
+		\item Ve Fragment Processoru běží fragment shader.
+    \item Fragment Shader je uživatelem specifikovaný program.
+    \item Cílem je transformovat vstupní fragment na výstupní fragment.
+    \item Multiple Render Target.
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=8cm,keepaspectratio]{pics/pipeline/FragmentShader.pdf}
+	\end{figure}
+\end{frame}
 
 \begin{frame}
-\frametitle{Rastrová část - rasterizace}
+\frametitle{Rastrová část - Brzké testy a operace}
 	\begin{picture}(320,250)
 		\put(0,20){\includegraphics[width=7cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineRaster}}
 	\end{picture}
 \end{frame}
 
 \begin{frame}
-\frametitle{Rastrová část - Per fragment operace}
+\frametitle{Rastrová část - Pozdní testy a Per fragment operace}
 	\begin{picture}(320,250)
 		\put(-20,20){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineFragmentShader}}
 	\end{picture}
 \end{frame}
 
+\begin{frame}
+\frametitle{PFO - depth test}
+	\begin{picture}(320,250)
+		\put(50,30){\includegraphics[width=10.5cm,keepaspectratio]{pics/pipeline/PFO}}
+	\end{picture}
+\end{frame}
 
 
 \begin{frame}
