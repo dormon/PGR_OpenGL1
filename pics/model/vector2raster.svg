@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148.10417mm"
+   height="19.326651mm"
+   viewBox="0 0 148.10417 19.326651"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="vector2raster.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5233586"
+     inkscape:cx="169.69084"
+     inkscape:cy="5.2515541"
+     inkscape:window-width="1919"
+     inkscape:window-height="1166"
+     inkscape:window-x="1"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5891" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5891-5" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-16.3377,-72.499552)">
+    <g
+       id="g6280">
+      <g
+         id="g5835">
+        <rect
+           style="fill:#ffb380;stroke:none;stroke-width:0.309999"
+           id="rect846"
+           width="47.362625"
+           height="9.8829441"
+           x="16.3377"
+           y="77.221405"
+           ry="2.0951612" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.29167px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke:none;stroke-width:0.264583"
+           x="19.171434"
+           y="83.622734"
+           id="text1494"><tspan
+             sodipodi:role="line"
+             id="tspan1492"
+             style="stroke:none;stroke-width:0.264583"
+             x="19.171434"
+             y="83.622734">Vector Graphics</tspan></text>
+      </g>
+      <g
+         id="g5840"
+         transform="translate(1.292138,-1.5529099)">
+        <rect
+           style="fill:#ffb380;stroke:none;stroke-width:0.309999"
+           id="rect846-6"
+           width="47.362625"
+           height="9.8829441"
+           x="115.78711"
+           y="78.774315"
+           ry="2.0951612" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.29167px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke:none;stroke-width:0.264583"
+           x="118.27978"
+           y="85.175644"
+           id="text1494-7"><tspan
+             sodipodi:role="line"
+             id="tspan1492-5"
+             style="stroke:none;stroke-width:0.264583"
+             x="118.27978"
+             y="85.175644">Raster Graphics</tspan></text>
+      </g>
+      <g
+         id="g5845"
+         transform="translate(5.7895334,-3.6695004)">
+        <rect
+           style="fill:#ff5555;stroke:none;stroke-width:0.309999"
+           id="rect846-3"
+           width="32.45787"
+           height="19.326651"
+           x="68.371323"
+           y="76.169052"
+           ry="2.0951612" />
+        <text
+           xml:space="preserve"
+           style="font-size:9.78102px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.48905"
+           x="74.432388"
+           y="89.392799"
+           id="text3344"><tspan
+             sodipodi:role="line"
+             id="tspan3342"
+             style="stroke-width:0.48905"
+             x="74.432388"
+             y="89.392799">GPU</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+         d="m 63.995537,82.162877 h 8.884767"
+         id="path5880" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)"
+         d="m 106.91394,82.162877 h 8.88476"
+         id="path5880-6" />
+    </g>
+  </g>
+</svg>

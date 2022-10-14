@@ -12,6 +12,10 @@ introductionImages = \
 	pics/gpu/threadHierarchy.pdf\
 	pics/gpu/thread_hierarchy.pdf\
 	pics/model/primitive.pdf\
+	pics/model/vector2raster.pdf\
+	pics/model/base_prim.pdf\
+	pics/model/common_prim.pdf\
+	pics/model/prim_adjacency.pdf\
 	pics/opengl/RenderingPipeline.pdf\
 	pics/opengl/clientserver.pdf\
 	pics/opengl/logo.pdf\
