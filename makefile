@@ -48,6 +48,7 @@ introductionImages = \
   pics/pipeline/barycentric2D.pdf\
   pics/pipeline/FragmentShader.pdf\
   pics/pipeline/PFO.pdf\
+  pics/pipeline/pipeline_vector_overview.pdf\
 	pics/program/cpp_and_glsl.pdf\
 	pics/program/shader_combination.pdf\
 	pics/vao/puller0.pdf\

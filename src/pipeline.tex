@@ -1,7 +1,11 @@
-\bluepage{Zobrazovací řetězec}
+\bluepage{Rendering Pipeline / Zobrazovací řetězec}
 
 \begin{frame}
-\frametitle{Grafická karta/zobrazovací řetězec}
+\frametitle{GPU / Rendering Pipeline / Zobrazovací řetězec}
+  \scriptsize
+	\begin{itemize}
+		\item GPU is divided into memory and rendering pipeline.
+	\end{itemize}
 	\begin{itemize}
 		\item GPU je rozděleno na paměť a vykreslovací řetěžec.
 	\end{itemize}
@@ -11,7 +15,12 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Zobrazovací řetězec}
+\frametitle{Rendering Pipeline / Zobrazovací řetězec}
+  \scriptsize
+	\begin{itemize}
+		\item Rendering Pipeline is divided into 2 parts: vector and raster.
+    \item Splitting element is rasterization.
+	\end{itemize}
 	\begin{itemize}
 		\item Zobrazovací řetěžec je rozdělen na 2 části - vektorovou a rastrovou.
     \item Dělícím prvkem je rasterizace.
@@ -21,9 +30,45 @@
 	\end{picture}
 \end{frame}
 
+\begin{frame}
+\frametitle{Vector Part / Vektorová část}
+  \scriptsize
+	\begin{itemize}
+		\item The main goal of vector part is to transform geometry.
+    \item It processes vertices, primitives, it performs transformations, clipping, cullling, tessellation, projection,...
+	\end{itemize}
+
+	\begin{itemize}
+		\item Hlavním úkolem vektorové části je transformace geometrie.
+    \item Počítá vertex, primitiva, provádí transformace, ořez, teselaci, projekci, ...
+	\end{itemize}
+
+	\begin{picture}(320,250)
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/pipeline_vector_overview}}
+	\end{picture}
+\end{frame}
 
 \begin{frame}
-\frametitle{Vektorová část zobrazovacího řetězce}
+\frametitle{Raster Part / Rastrová část}
+  \scriptsize
+	\begin{itemize}
+		\item The main goal of raster part is to process fragments.
+    \item It colors fragment, performs per fragment operations, depth test, stencil test, blending, ...
+	\end{itemize}
+
+	\begin{itemize}
+		\item Hlavním úkolem rastrové části je výpočet fragmentů.
+    \item Obarvuje fragment, provádí per fragment operace, hloubkový test, stencil test, blending, ...
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vector Part / Vektorová část}
+  \scriptsize
+	\begin{itemize}
+		\item Vector Part is composed of many blocks.
+    \item Some of the blocks are programable, some can be skipped.
+	\end{itemize}
 	\begin{itemize}
 		\item Vektorová část řetězce je složena z mnoha bloků.
     \item Některé bloky jsou programovatelné a některé vynechatelné.
