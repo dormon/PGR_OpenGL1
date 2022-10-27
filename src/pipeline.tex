@@ -49,6 +49,21 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Rasterization / Rasterizace}
+  \scriptsize
+	\begin{itemize}
+    \item The goal of rasterization is to convert vector graphics elements (triangles, lines, points) to fragments.
+	\end{itemize}
+
+	\begin{itemize}
+    \item Cílem rasterizace je převod vektorových grafických elementů (trojúhelníky, čáry, body) na fragmenty.
+  \end{itemize}
+	\begin{picture}(320,250)
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/rasterization_overview}}
+	\end{picture}
+\end{frame}
+
+\begin{frame}
 \frametitle{Raster Part / Rastrová část}
   \scriptsize
 	\begin{itemize}
@@ -60,7 +75,11 @@
 		\item Hlavním úkolem rastrové části je výpočet fragmentů.
     \item Obarvuje fragment, provádí per fragment operace, hloubkový test, stencil test, blending, ...
 	\end{itemize}
+	\begin{picture}(320,250)
+		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/pfo_overview}}
+	\end{picture}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Vector Part / Vektorová část}
@@ -80,6 +99,10 @@
 
 \begin{frame}
 \frametitle{Zlednodušená Vektorová část}
+  \scriptsize
+	\begin{itemize}
+		\item If we remove optional blocks, the pipeline looks like this.
+	\end{itemize}
 	\begin{itemize}
 		\item Pokud vynecháme volitelné bloky, zůstane zjednodušená vektorová část řetězce.
 	\end{itemize}
@@ -90,10 +113,16 @@
 
 \begin{frame}
 \frametitle{Vertex Assembly, vertex processor, primitive assembly}
+  \scriptsize
+	\begin{itemize}
+		\item Vertex Assembly creates vertices.
+    \item Vertex processor transforms vertices.
+    \item Primitive assembly creates base primitives from transformed vertices.
+  \end{itemize}
 	\begin{itemize}
 		\item Vertex Assembly sestavuje vrcholy
     \item Vertex processor transformuje vrcholy
-    \item Primitive assembly sestavuje primitiva.
+    \item Primitive assembly sestavuje základní primitiva.
 	\end{itemize}
 	\begin{picture}(320,250)
 		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineVertexShader}}
@@ -102,8 +131,14 @@
 
 \begin{frame}
 \frametitle{Vertex, Vertex Assembly}
+  \scriptsize
 	\begin{itemize}
-		\item Vertex je kolekce atributů
+		\item Vertex is a structure of vertex attributes.
+    \item Vertex Assembly unit reads data from memory and forms vertices.
+	\end{itemize}
+
+	\begin{itemize}
+		\item Vertex je struktura vertex atributů
     \item Vertex Assembly jednotka se stará o sestavování vrcholů z bufferů.
 	\end{itemize}
 	\begin{picture}(120,150)
@@ -116,9 +151,14 @@
 
 \begin{frame}
 \frametitle{Vertex Assembly - indexované kreslení}
+  \scriptsize
+	\begin{itemize}
+		\item Vertex Assembly can utilize indexing
+    \item Vertex Cache - already processed vertices do not have to be processed again
+	\end{itemize}
 	\begin{itemize}
 		\item Vertex Assembly může využít indexování
-    \item Vertex Cache
+    \item Vertex Cache - jednou propočítané vrcholy není třeba počítat znovu
 	\end{itemize}
 	\begin{picture}(120,150)
 		\put(25,0){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/drawElements}}

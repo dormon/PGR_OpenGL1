@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="360.65485mm"
    height="145.46951mm"
    viewBox="0 0 360.65485 145.46951"
    version="1.1"
    id="svg14460"
-   inkscape:version="0.92.2 (unknown)"
-   sodipodi:docname="RenderingPipelineMemoryPipeline.svg">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="RenderingPipelineMemoryPipeline.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs14454">
     <marker
@@ -55,8 +55,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="291.55248"
-     inkscape:cy="-136.52557"
+     inkscape:cx="290"
+     inkscape:cy="-137.14286"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -65,10 +65,11 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1919"
-     inkscape:window-height="1051"
+     inkscape:window-height="1046"
      inkscape:window-x="1"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata14457">
     <rdf:RDF>
@@ -77,7 +78,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,62 +87,58 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(91.880998,32.758565)">
-    <g
-       id="g8402"
-       transform="matrix(0.26458333,0,0,0.26458333,-75.999816,29.08434)">
-      <rect
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;stroke:#000000;stroke-width:2.24865246;marker:none;enable-background:accumulate"
-         id="rect38743-5-5-2"
-         width="1360.8563"
-         height="547.55737"
-         x="-58.89904"
-         y="-232.61264" />
-      <rect
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ddff55;stroke:#000000;stroke-width:0.74828833;marker:none;enable-background:accumulate"
-         id="rect38743-3"
-         width="220.47937"
-         height="510.33716"
-         x="-38.880699"
-         y="-214.00423" />
-      <rect
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#d5fff6;stroke:#000000;stroke-width:0.74750566;marker:none;enable-background:accumulate"
-         id="rect38743-2-2"
-         width="1070.3208"
-         height="510.33795"
-         x="211.61852"
-         y="-214.00124" />
-      <path
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-width:6.01277018;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-62)"
-         d="m 222.86202,179.13082 h -34.1652"
-         id="path36764-2" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         x="-15.406393"
-         y="52.091957"
-         id="text38745-7"><tspan
-           sodipodi:role="line"
-           id="tspan38747-2"
-           x="-15.406393"
-           y="52.091957"
-           style="font-size:41.94889069px;line-height:1.25;font-family:sans-serif">Memory</tspan></text>
-      <path
-         id="path8115-3-8"
-         d="M 180.35353,-134.75693 H 214.5187"
-         style="fill:none;stroke:#000000;stroke-width:6.01277018;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-61-6)"
-         inkscape:connector-curvature="0" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:23.04442215px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.92036855"
-         x="372.3168"
-         y="63.178879"
-         id="text38745-2-6"><tspan
-           sodipodi:role="line"
-           id="tspan38747-0-9"
-           x="372.3168"
-           y="63.178879"
-           style="font-size:79.78551483px;line-height:1.25;font-family:sans-serif;stroke-width:1.92036855">Rendering Pipeline</tspan></text>
-    </g>
+    <rect
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;stroke:#000000;stroke-width:0.594955;marker:none;enable-background:accumulate"
+       id="rect38743-5-5-2"
+       width="360.05991"
+       height="144.87456"
+       x="-91.583519"
+       y="-32.461086" />
+    <rect
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ddff55;stroke:none;stroke-width:0.197985;marker:none;enable-background:accumulate"
+       id="rect38743-3"
+       width="58.335167"
+       height="135.0267"
+       x="-86.287003"
+       y="-27.537611" />
+    <rect
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#d5fff6;stroke:none;stroke-width:0.197778;marker:none;enable-background:accumulate"
+       id="rect38743-2-2"
+       width="283.18906"
+       height="135.02692"
+       x="-20.009085"
+       y="-27.536819" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.59088;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-62)"
+       d="m -17.034241,76.479369 h -9.039542"
+       id="path36764-2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-80.076088"
+       y="42.867004"
+       id="text38745-7"><tspan
+         sodipodi:role="line"
+         id="tspan38747-2"
+         x="-80.076088"
+         y="42.867004"
+         style="font-size:11.099px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583">Memory</tspan></text>
+    <path
+       id="path8115-3-8"
+       d="m -28.281278,-6.5700973 h 9.039534"
+       style="fill:none;stroke:#000000;stroke-width:1.59088;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-61-6)"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.09716px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.508098"
+       x="22.509003"
+       y="45.800419"
+       id="text38745-2-6"><tspan
+         sodipodi:role="line"
+         id="tspan38747-0-9"
+         x="22.509003"
+         y="45.800419"
+         style="font-size:21.1099px;line-height:1.25;font-family:sans-serif;stroke-width:0.508098">Rendering Pipeline</tspan></text>
   </g>
 </svg>

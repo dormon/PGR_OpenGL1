@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="499.92801mm"
    height="264.05951mm"
    viewBox="0 0 499.92801 264.05951"
    version="1.1"
    id="svg13790"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="VertexAssembly.svg">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="vertexAssembly.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs13784">
     <marker
@@ -237,20 +237,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="835.19888"
-     inkscape:cy="536.46702"
+     inkscape:cx="835.39615"
+     inkscape:cy="537.40115"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1919"
-     inkscape:window-height="1057"
+     inkscape:window-height="1046"
      inkscape:window-x="1"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata13787">
     <rdf:RDF>
@@ -269,7 +270,7 @@
      id="layer1"
      transform="translate(518.94952,-39.88813)">
     <rect
-       style="opacity:0.797;fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:0.797;fill:#ffd5d5;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect8423"
        width="103.1875"
        height="71.854813"
@@ -277,7 +278,7 @@
        y="103.81758" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-229.15489"
        y="98.839035"
        id="text8427"><tspan
@@ -285,7 +286,7 @@
          id="tspan8425"
          x="-229.15489"
          y="98.839035"
-         style="stroke-width:0.26458332px">Vertex Assembly</tspan></text>
+         style="stroke-width:0.264583px">Vertex Assembly</tspan></text>
     <g
        id="g1135"
        transform="translate(-515.144,21.601491)">
@@ -294,7 +295,7 @@
          transform="matrix(0.674762,0,0,0.674762,222.94528,41.57745)">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="296.57126"
            y="71.454544"
            id="text874"><tspan
@@ -302,7 +303,7 @@
              id="tspan872"
              x="296.57126"
              y="71.454544"
-             style="stroke-width:0.26458332px">InVertex</tspan></text>
+             style="stroke-width:0.264583px">InVertex</tspan></text>
         <rect
            style="opacity:1;fill:#eeffaa;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect815"
@@ -313,34 +314,34 @@
            ry="0.038805116" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="306.17163"
            y="93.153236"
            id="text823-6"><tspan
              sodipodi:role="line"
              x="306.17163"
              y="93.153236"
-             style="fill:#008000;stroke-width:0.26458332px"
+             style="fill:#008000;stroke-width:0.264583px"
              id="tspan982">gl_VertexID</tspan><tspan
              id="tspan1075"
              sodipodi:role="line"
              x="306.17163"
              y="106.3824"
-             style="stroke-width:0.26458332px">0. vertexAttribute</tspan><tspan
+             style="stroke-width:0.264583px">0. vertexAttribute</tspan><tspan
              sodipodi:role="line"
              x="306.17163"
              y="119.61157"
-             style="stroke-width:0.26458332px"
+             style="stroke-width:0.264583px"
              id="tspan990">1. vertexAttribute</tspan><tspan
              sodipodi:role="line"
              x="306.17163"
              y="132.84073"
-             style="stroke-width:0.26458332px"
+             style="stroke-width:0.264583px"
              id="tspan992">2. vertexAttribute</tspan><tspan
              sodipodi:role="line"
              x="306.17163"
              y="146.0699"
-             style="stroke-width:0.26458332px"
+             style="stroke-width:0.264583px"
              id="tspan986">...</tspan></text>
       </g>
     </g>
@@ -351,7 +352,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <rect
-       style="opacity:1;fill:#e5ff80;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:1;fill:#e5ff80;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect997"
        width="244.17735"
        height="263.05951"
@@ -359,7 +360,7 @@
        y="40.38813" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:24.51899529px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61297482px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:24.519px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.612975px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-500.14673"
        y="94.148941"
        id="text995"><tspan
@@ -367,18 +368,20 @@
          id="tspan993"
          x="-500.14673"
          y="94.148941"
-         style="stroke-width:0.61297482px">GPU</tspan><tspan
+         style="stroke-width:0.612975px">GPU</tspan><tspan
          sodipodi:role="line"
          x="-500.14673"
          y="124.79768"
-         style="stroke-width:0.61297482px"
+         style="stroke-width:0.612975px"
          id="tspan25446">memory</tspan></text>
     <g
-       id="g24904">
+       id="g24904"
+       style="stroke:none">
       <g
-         id="g24867">
+         id="g24867"
+         style="stroke:none">
         <rect
-           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect2409-2-36-5"
            width="78.989563"
            height="20.847023"
@@ -386,7 +389,7 @@
            y="131.59352" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            x="-379.49579"
            y="145.96252"
            id="text2395-1-4"><tspan
@@ -394,12 +397,13 @@
              id="tspan2393-2-7"
              x="-379.49579"
              y="145.96252"
-             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Vertex Buffer</tspan></text>
+             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:none">Vertex Buffer</tspan></text>
       </g>
       <g
-         id="g24877">
+         id="g24877"
+         style="stroke:none">
         <rect
-           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect2409-2-36-65"
            width="39.680038"
            height="20.847015"
@@ -407,7 +411,7 @@
            y="79.293915" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            x="-361.27725"
            y="93.662918"
            id="text2395-1-6"><tspan
@@ -415,12 +419,13 @@
              id="tspan2393-2-9"
              x="-361.27725"
              y="93.662918"
-             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Buffer</tspan></text>
+             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:none">Buffer</tspan></text>
       </g>
       <g
-         id="g24862">
+         id="g24862"
+         style="stroke:none">
         <rect
-           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect2409-2-36-3"
            width="73.319916"
            height="20.847031"
@@ -428,7 +433,7 @@
            y="157.74333" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            x="-377.53467"
            y="172.11234"
            id="text2395-1-7"><tspan
@@ -436,12 +441,13 @@
              id="tspan2393-2-4"
              x="-377.53467"
              y="172.11234"
-             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Index Buffer</tspan></text>
+             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:none">Index Buffer</tspan></text>
       </g>
       <g
-         id="g24882">
+         id="g24882"
+         style="stroke:none">
         <rect
-           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect2409-2-36-5-2"
            width="78.989563"
            height="20.847023"
@@ -449,7 +455,7 @@
            y="53.144089" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            x="-379.49579"
            y="67.513092"
            id="text2395-1-4-5"><tspan
@@ -457,12 +463,13 @@
              id="tspan2393-2-7-4"
              x="-379.49579"
              y="67.513092"
-             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Vertex Buffer</tspan></text>
+             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:none">Vertex Buffer</tspan></text>
       </g>
       <g
-         id="g24872">
+         id="g24872"
+         style="stroke:none">
         <rect
-           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="opacity:1;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect2409-2-36-5-4"
            width="78.989563"
            height="20.847023"
@@ -470,7 +477,7 @@
            y="105.44372" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            x="-379.49579"
            y="119.81272"
            id="text2395-1-4-4"><tspan
@@ -478,11 +485,11 @@
              id="tspan2393-2-7-3"
              x="-379.49579"
              y="119.81272"
-             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Vertex Buffer</tspan></text>
+             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:none">Vertex Buffer</tspan></text>
       </g>
     </g>
     <rect
-       style="opacity:1;fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:1;fill:#deaa87;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect2409-9-3"
        width="84.687019"
        height="48.257397"
@@ -490,41 +497,38 @@
        y="115.40908" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:9.36713505px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.23417836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:9.36714px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.234178px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-207.84587"
        y="135.88953"
        id="text2399-2"><tspan
          sodipodi:role="line"
          x="-207.84587"
          y="135.88953"
-         style="stroke-width:0.23417836px"
+         style="stroke-width:0.234178px"
          id="tspan160">Vertex Array</tspan><tspan
          id="tspan21147"
          sodipodi:role="line"
          x="-207.84587"
          y="147.59845"
-         style="stroke-width:0.23417836px">Settings</tspan></text>
-    <g
-       id="g182">
-      <rect
-         y="194.63577"
-         x="-411.0148"
-         height="20.847023"
-         width="123.47853"
-         id="rect2409-9-8"
-         style="opacity:1;fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
-      <text
-         id="text2399-4"
+         style="stroke-width:0.234178px">Settings</tspan></text>
+    <rect
+       y="194.63577"
+       x="-411.0148"
+       height="20.847023"
+       width="123.47853"
+       id="rect2409-9-8"
+       style="fill:#deaa87;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       id="text2399-4"
+       y="207.97897"
+       x="-405.9827"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#000000;stroke:none;stroke-width:0.264583px"
          y="207.97897"
          x="-405.9827"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332px"
-           y="207.97897"
-           x="-405.9827"
-           id="tspan2397-3"
-           sodipodi:role="line">Vertex Array Settings</tspan></text>
-    </g>
+         id="tspan2397-3"
+         sodipodi:role="line">Vertex Array Settings</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1428-1)"
        d="m -307.67514,167.11932 c 29.3416,2.38733 24.51162,-9.30139 72.82297,-9.07143"
@@ -551,21 +555,22 @@
        sodipodi:nodetypes="cc" />
     <g
        transform="translate(-0.34065091,36.90026)"
-       id="g182-3">
+       id="g182-3"
+       style="stroke:none">
       <rect
          y="194.63577"
          x="-411.0148"
          height="20.847023"
          width="123.47853"
          id="rect2409-9-8-6"
-         style="opacity:1;fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="opacity:1;fill:#deaa87;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <text
          id="text2399-4-7"
          y="207.97897"
          x="-405.9827"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           style="stroke-width:0.26458332px"
+           style="stroke-width:0.264583px;stroke:none"
            y="207.97897"
            x="-405.9827"
            id="tspan2397-3-5"
@@ -577,27 +582,23 @@
        id="path11217-3-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
-    <g
-       transform="translate(0.41530134,73.56395)"
-       id="g182-35">
-      <rect
-         y="194.63577"
-         x="-411.0148"
-         height="20.847023"
-         width="123.47853"
-         id="rect2409-9-8-62"
-         style="opacity:1;fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
-      <text
-         id="text2399-4-9"
-         y="207.97897"
-         x="-405.9827"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332px"
-           y="207.97897"
-           x="-405.9827"
-           id="tspan2397-3-1"
-           sodipodi:role="line">Vertex Array Settings</tspan></text>
-    </g>
+    <rect
+       y="268.19974"
+       x="-410.59949"
+       height="20.847023"
+       width="123.47853"
+       id="rect2409-9-8-62"
+       style="fill:#deaa87;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       id="text2399-4-9"
+       y="281.54294"
+       x="-405.56738"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#000000;stroke:none;stroke-width:0.264583px"
+         y="281.54294"
+         x="-405.56738"
+         id="tspan2397-3-1"
+         sodipodi:role="line">Vertex Array Settings</tspan></text>
   </g>
 </svg>
