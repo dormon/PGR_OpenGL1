@@ -150,7 +150,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Vertex Assembly - indexované kreslení}
+\frametitle{Vertex Assembly / indexing}
   \scriptsize
 	\begin{itemize}
 		\item Vertex Assembly can utilize indexing
@@ -167,6 +167,13 @@
 
 \begin{frame}
 \frametitle{Vertex Processor}
+  \scriptsize
+	\begin{itemize}
+		\item Vertex Processor executes vertex shader.
+    \item Vertex Shader is user program.
+    \item The goal is to transform input vertex structure to output vertex structure.
+	\end{itemize}
+
 	\begin{itemize}
 		\item Ve Vertex Processoru běží vertex shader.
     \item Vertex Shader je uživatelem specifikovaný program.
@@ -179,6 +186,13 @@
 
 \begin{frame}
 \frametitle{Primitive Assembly}
+  \scriptsize
+	\begin{itemize}
+		\item Primitive Assembly unit creates base primitives.
+    \item Output of the unit is one of the three base primitives (triangles, lines, points).
+    \item The units is guided by the primitive type (Triangles, Triangle Strip, Triangle Fan, Line Strip, Adjacency, Patch, ...)
+	\end{itemize}
+
 	\begin{itemize}
 		\item Primitive Assembly jednotka sestavuje primitiva.
     \item Cílem je podle nastavení sestavovat trojúhelníky, úsečky, vrcholy.
@@ -186,7 +200,7 @@
     \item Triangle Strip, Triangle Fan, Line Strip, Triangle Adjacency, Patch, ...
 	\end{itemize}
 	\begin{picture}(120,150)
-		\put(25,0){\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/PrimitiveAssembly}}
+		\put(25,0){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/PrimitiveAssembly}}
 	\end{picture}
 \end{frame}
 
