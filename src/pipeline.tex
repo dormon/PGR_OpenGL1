@@ -9,9 +9,7 @@
 	\begin{itemize}
 		\item GPU je rozděleno na paměť a vykreslovací řetěžec.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineMemoryPipeline}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineMemoryPipeline}
 \end{frame}
 
 \begin{frame}
@@ -25,9 +23,7 @@
 		\item Zobrazovací řetěžec je rozdělen na 2 části - vektorovou a rastrovou.
     \item Dělícím prvkem je rasterizace.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVectorRaster}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVectorRaster}
 \end{frame}
 
 \begin{frame}
@@ -43,9 +39,7 @@
     \item Počítá vertex, primitiva, provádí transformace, ořez, teselaci, projekci, ...
 	\end{itemize}
 
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/pipeline_vector_overview}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/pipeline_vector_overview}
 \end{frame}
 
 \begin{frame}
@@ -58,9 +52,7 @@
 	\begin{itemize}
     \item Cílem rasterizace je převod vektorových grafických elementů (trojúhelníky, čáry, body) na fragmenty.
   \end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/rasterization_overview}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/rasterization_overview}
 \end{frame}
 
 \begin{frame}
@@ -75,9 +67,7 @@
 		\item Hlavním úkolem rastrové části je výpočet fragmentů.
     \item Obarvuje fragment, provádí per fragment operace, hloubkový test, stencil test, blending, ...
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/pfo_overview}}
-	\end{picture}
+  \includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/pfo_overview}
 \end{frame}
 
 
@@ -92,9 +82,7 @@
 		\item Vektorová část řetězce je složena z mnoha bloků.
     \item Některé bloky jsou programovatelné a některé vynechatelné.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,60){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVector}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/RenderingPipelineVector}
 \end{frame}
 
 \begin{frame}
@@ -106,9 +94,7 @@
 	\begin{itemize}
 		\item Pokud vynecháme volitelné bloky, zůstane zjednodušená vektorová část řetězce.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,60){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/simplified_pipeline}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/simplified_pipeline}
 \end{frame}
 
 \begin{frame}
@@ -124,9 +110,7 @@
     \item Vertex processor transformuje vrcholy
     \item Primitive assembly sestavuje základní primitiva.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineVertexShader}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineVertexShader}
 \end{frame}
 
 \begin{frame}
@@ -160,9 +144,7 @@
 		\item Vertex Assembly může využít indexování
     \item Vertex Cache - jednou propočítané vrcholy není třeba počítat znovu
 	\end{itemize}
-	\begin{picture}(120,150)
-		\put(25,0){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/drawElements}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/drawElements}
 \end{frame}
 
 \begin{frame}
@@ -179,9 +161,7 @@
     \item Vertex Shader je uživatelem specifikovaný program.
     \item Cílem je transformovat vstupní vrchol na výstupní vrchol.
 	\end{itemize}
-	\begin{picture}(120,150)
-		\put(25,0){\includegraphics[width=10.5cm,keepaspectratio]{pics/pipeline/vertexShader}}
-	\end{picture}
+	\includegraphics[width=10.5cm,keepaspectratio]{pics/pipeline/vertexShader}
 \end{frame}
 
 \begin{frame}
@@ -199,39 +179,60 @@
     \item Základní primitiva (trojúhleník, úsečka) mohou být součástí složitějších primitive.
     \item Triangle Strip, Triangle Fan, Line Strip, Triangle Adjacency, Patch, ...
 	\end{itemize}
-	\begin{picture}(120,150)
-		\put(25,0){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/PrimitiveAssembly}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/PrimitiveAssembly}
 \end{frame}
 
 \begin{frame}
 \frametitle{Culling, clipping}
+  \scriptsize
 	\begin{itemize}
-		\item Těsně před raterizací se zahazují odvrácené trojúhelníky a zbylé se ořezávají pohledovým frustem.
+		\item Clipping, Culling, Perspective Divide and Viewport Transformation is performed between primitive assembly unit and rasterization.
+    \item Culling discards back facing triangles.
+    \item Clipping clips triangles that are not completely inside view-frustum.
+    \item Perspective division shrinks objects that are further from the camera.
+    \item Viewport Transformation transforms geometry to match screen resolution.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineClipping}}
-	\end{picture}
+	\begin{itemize}
+    \item Mezi rasterizací a sestavením primitiv se provádí ořez, zahazování odvrácených trojúhelníků, perspektivní dělení a viewport transformace.
+    \item Clipping ořezává primitiva, která jsou jen částečně v pohledovém jehlanu.
+    \item Perspektivní dělení zmenšuje objekty, které jsou dál od kamery.
+    \item Viewport transformace převádí objekty na rozměr obrazovky.
+	\end{itemize}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineClipping}
 \end{frame}
 
 \begin{frame}
 \frametitle{Culling}
+  \scriptsize
+	\begin{itemize}
+		\item Culling removes triangles that are backfacing or front facing the camera.
+    \item The state of triangle orientation is decided by vertex winding.
+    \item It is possible to discard backfacing or frontfacing triangles.
+    \item Is is also possible to specify what is backfacing side (clock wise/counter clock wise vertices).
+    \item Just for 2 manifold objects or scenes with restricted camera movement.
+    \item Performance can be doubled with Culling.
+	\end{itemize}
 	\begin{itemize}
 		\item Culling se stará o zahazování odvrácených trojúhelníků.
     \item Odvrácenost je rozhodnuta na základě pořadí vrcholů.
     \item Je možné nastavit, jestli je trojúhelník přivrácený nebo odvrácený, pokud jsou vrcholy po nebo proti směru hodinových ručiček.
+    \item Výkon vykreslování může být zdvojnásoben díky Cullingu.
 	\end{itemize}
-	\begin{picture}(120,150)
-		\put(25,25){\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/culling}}
-	\end{picture}
+	\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/culling}
 \end{frame}
 
 \begin{frame}
 \frametitle{Clipping, near-plane clipping}
+  \scriptsize
+	\begin{itemize}
+		\item If a primitive is only partially inside view-frutum, it needs to be clipped.
+    \item Only near-plane clipping is necessary.
+    \item If the result is quadrangle, it can be replaced with two sub-triangles.
+	\end{itemize}
 	\begin{itemize}
 		\item Pokud je primitivum jen částečně uvnitř pohledového jehlanu, je potřeba jej oříznout.
     \item Obvykle stačí oříznout pomocí blízké ořezové roviny (near-plane).
-    \item Pokud vznikne čtyčúhelník, je možné jej nahradit dvěma trojúhelníky.
+    \item Pokud vznikne čtyřúhelník, je možné jej nahradit dvěma trojúhelníky.
 	\end{itemize}
 	\begin{picture}(120,150)
 		\put(0,0){\includegraphics[width=4.5cm,keepaspectratio]{pics/pipeline/clip}}
@@ -242,35 +243,45 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Perspektivní dělení}
+\frametitle{Perspective Divide / Perspektivní dělení}
+  \scriptsize
+	\begin{itemize}
+		\item Perspective Division unit converts hommogeneous coordinates to cartesian coordinates.
+    \item It divides $x,y,z$ using $w$. The $w$ contains distance from camera.
+    \item After division, $x,y,z \in [-1,+1]$ which is called normalized device coordinates (NDC).
+    \item Division is expensive operation, specialized HW performs it fasters.
+	\end{itemize}
 	\begin{itemize}
 		\item Blok perspektivního dělení převádí homogenní souřadnice na kartézské.
     \item Dělí se pomocí W, ve kterém je uložena hloubka. Tím se zmenšují objekty, které jsou dál od kamera.
     \item Po perspekvitním dělení všechny vrcholy leží v rozsahu $[-1,+1]$ - normalized device coordinates.
+    \item Dělení je drahá operace, specializovaný HW ji provede rychleji.
 	\end{itemize}
-	\begin{picture}(120,150)
-		\put(50,0){\includegraphics[width=6.5cm,keepaspectratio]{pics/pipeline/PerspectiveDivision}}
-	\end{picture}
+	\includegraphics[width=6.5cm,keepaspectratio]{pics/pipeline/PerspectiveDivision}
 \end{frame}
 
 \begin{frame}
-\frametitle{Viewport transformace}
+\frametitle{Viewport Transform / Viewport transformace}
+  \scriptsize
+	\begin{itemize}
+		\item Viewport transformation converts NDC to screen resolution.
+	\end{itemize}
 	\begin{itemize}
 		\item Blok viewport transformace transformuje normalizované souřadnice na rozlišení plátna.
 	\end{itemize}
-	\begin{picture}(120,150)
-		\put(50,0){\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/ViewportTransformation}}
-	\end{picture}
+	\includegraphics[width=8.5cm,keepaspectratio]{pics/pipeline/ViewportTransformation}
 \end{frame}
 
 \begin{frame}
-\frametitle{Teselace}
+\frametitle{Tessellation / Teselace}
+  \scriptsize
+	\begin{itemize}
+		\item Tessellation is composed of 2 programable parts and hardware primitive generator.
+	\end{itemize}
 	\begin{itemize}
 		\item Tesselace je složena zde 2 programovatelných processorů a hardwarového generátoru primitiv.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineTessellationShaders}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineTessellationShaders}
 \end{frame}
 
 \begin{frame}
