@@ -86,7 +86,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Zlednodušená Vektorová část}
+\frametitle{Simplified vector part / Zlednodušená Vektorová část}
   \scriptsize
 	\begin{itemize}
 		\item If we remove optional blocks, the pipeline looks like this.
@@ -277,26 +277,40 @@
   \scriptsize
 	\begin{itemize}
 		\item Tessellation is composed of 2 programable parts and hardware primitive generator.
+    \item The goal of tessellation is to add geometric details.
 	\end{itemize}
 	\begin{itemize}
 		\item Tesselace je složena zde 2 programovatelných processorů a hardwarového generátoru primitiv.
+    \item Cíl teselace je přidání geometrických detailů.
 	\end{itemize}
 	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineTessellationShaders}
 \end{frame}
 
 \begin{frame}
 \frametitle{Geometry processor, transform feedback}
+  \scriptsize
+	\begin{itemize}
+		\item Geometry processor inputs and outputs are primitives.
+    \item The goal is to change, generate primitives.
+    \item The stream of primitives can be sent to buffer.
+	\end{itemize}
 	\begin{itemize}
 		\item Geometry processor transformuje primitiva.
     \item Transform feedback může primitiva přeposlat zpět do bufferu.
 	\end{itemize}
-	\begin{picture}(320,250)
-		\put(0,100){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineGeometryShader}}
-	\end{picture}
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineGeometryShader}
 \end{frame}
 
 \begin{frame}
-\frametitle{Rasterizace}
+\frametitle{Rasterization / Rasterizace}
+  \scriptsize
+	\begin{itemize}
+		\item Rasterization produces fragments.
+    \item Fragment is date structure that is created in the location of sampling point.
+    \item Sampling point is usualy in the center of pixel.
+    \item The situation is more complicated with the use of multisampling.
+    \item If a sampling point is located inside a triangle, a fragment is created for corresponding pixel.
+	\end{itemize}
 	\begin{itemize}
 		\item Rasterizace produkuje fragmenty.
     \item Fragment je datová struktura, která vznikne na pozici vzorku (sampling point).
@@ -310,7 +324,13 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Rasterizace a interpolace}
+\frametitle{Rasterization and Interpolation / Rasterizace a interpolace}
+  \scriptsize
+	\begin{itemize}
+		\item Out Vertices are composed of n vertex attributes.
+    \item Rasterization produces fragments -- data structure -- which is composed of fragment attributes with the same user specific fragment attributes.
+    \item Barycentric interpolation is used to transform three vertex data structures to many fragment data structures.
+	\end{itemize}
 	\begin{itemize}
 		\item Vertexy jsou před rasterizací popsány pomocí n-tice atributů
     \item Rasterizace produkuje fragmenty, pokud jejich střed leží uvnitř primitiva
@@ -322,21 +342,34 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Barycentrické koordináty}
+\frametitle{Barycetric coordinates / Barycentrické koordináty}
 	\begin{figure}[h]
 		\includegraphics[width=8cm,keepaspectratio]{pics/pipeline/barycentrickekoordinaty.pdf}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Barycentrické koordináty ve 2D}
+\frametitle{2D Barycentric coordinates / Barycentrické koordináty ve 2D}
+  \scriptsize
+	\begin{itemize}
+		\item 2D barycentrics are computed as ratio between the area of the triangle and the areas of its sub-triangles. 
+	\end{itemize}
+	\begin{itemize}
+		\item Barycentrické koordináty ve 2D jsou spočítaný jako poměr obsahů.
+	\end{itemize}
 	\begin{figure}[h]
 		\includegraphics[width=8cm,keepaspectratio]{pics/pipeline/barycentric2D.pdf}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Perspektivní zkreslení}
+\frametitle{Perspective distortion / Perspektivní zkreslení}
+  \scriptsize
+	\begin{itemize}
+		\item Vertex attributes can be interpolated in the projection plane or in the 3D space.
+    \item Interpolation in the 3D space is correct.
+    \item In order to convert 2D interpolation to 3D interpolation, the perspective correction is required (OpenGL supports this natively / can be turned off)
+	\end{itemize}
 	\begin{itemize}
 		\item Vertex atributy se mohou interpolovat v rovině průmětny nebo v prostoru scény
     \item Aby se mohlo interpolovat v prostoru scény, musí se provést perspektivní korekce
@@ -349,6 +382,13 @@
 
 \begin{frame}
 \frametitle{Fragment Processor}
+  \scriptsize
+	\begin{itemize}
+		\item Fragment shader is executed inside fragment processor.
+    \item Fragment Shader is user program.
+    \item The goal of the shader is to transform input fragment to output fragments.
+    \item Multiple Render Target - support for rendering into multiple 2D arrays (renderbuffers / textures).
+	\end{itemize}
 	\begin{itemize}
 		\item Ve Fragment Processoru běží fragment shader.
     \item Fragment Shader je uživatelem specifikovaný program.
@@ -361,24 +401,24 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Rastrová část - Brzké testy a operace}
-	\begin{picture}(320,250)
-		\put(0,20){\includegraphics[width=7cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineRaster}}
-	\end{picture}
+\frametitle{Early fragment tests / Brzké testy a operace}
+	\begin{figure}[h]
+	\includegraphics[width=7cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineRaster}
+	\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Rastrová část - Pozdní testy a Per fragment operace}
-	\begin{picture}(320,250)
-		\put(-20,20){\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineFragmentShader}}
-	\end{picture}
+\frametitle{Late fragment tests and operations}
+	\begin{figure}[h]
+	\includegraphics[width=12.5cm,keepaspectratio]{pics/pipeline/OpenGL460PipelineFragmentShader}
+	\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{PFO - depth test}
-	\begin{picture}(320,250)
-		\put(50,30){\includegraphics[width=10.5cm,keepaspectratio]{pics/pipeline/PFO}}
-	\end{picture}
+	\begin{figure}[h]
+	\includegraphics[width=10.5cm,keepaspectratio]{pics/pipeline/PFO}
+	\end{figure}
 \end{frame}
 
 
