@@ -1,9 +1,6 @@
 SRCDIR = src/
 TARGET = presentation
 
-%.pdf: %.svg
-	rsvg-convert -f pdf -o $@ $<
-
 allPDFFromSVG := $(shell find -type f | grep "\.svg$$" | sed "s/svg$$/pdf/g")
 
 %.pdf: %.svg
