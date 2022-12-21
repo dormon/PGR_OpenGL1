@@ -1,20 +1,28 @@
-\begin{frame}
-\frametitle{Jazyk GLSL}
-  \begin{itemize}
-  \item GLSL - OpenGL Shading Language
-  \item Slouží pro popis programů, které běží na GPU
-  \item Je odvozený od C
-  \item Neobsahuje rekurzi, třídy, výjimky, std knihovny
-  \item Obsahuje vektorové a maticové typy, vestavěné funkce, vestavěné proměnné, synchronizační funkce, typové kvalifikátory, rozšířené adresování vektorů
-  \item Každý shader musí obsahovat main funkci
-  \item Každá main funkce je vykonávána v mnoha instancích v dané části pipeline
-  \item Některé části pipeline mají speciální nastavení
-  \end{itemize}
+\begin{frame}\frametitle{GLSL}\scriptsize
+\begin{itemize}
+  \item GLSL - OpenGL Shading Language.
+  \item It describes programs that are executed on GPU.
+  \item C based.
+  \item No recursion, classes, exceptions, std libs.
+  \item Vector and matrix types, built-in variables and functions, synchronzation, variable qualifiers, swizzling.
+  \item Every shader stage must have main function - entry point.
+  \item Shader is execute in many instances -- threads in particular stage of pipeline
+  \item Some parts of pipeline have special setttings.
+\end{itemize}
+
+\begin{itemize}
+  \item GLSL - OpenGL Shading Language.
+  \item Slouží pro popis programů, které běží na GPU.
+  \item Je odvozený od C.
+  \item Neobsahuje rekurzi, třídy, výjimky, std knihovny.
+  \item Obsahuje vektorové a maticové typy, vestavěné funkce, vestavěné proměnné, synchronizační funkce, kvalifikátory, rozšířené adresování vektorů.
+  \item Každý shader musí obsahovat main funkci.
+  \item Každá main funkce je vykonávána v mnoha instancích v dané části pipeline.
+  \item Některé části pipeline mají speciální nastavení.
+\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Jazyk GLSL - příklad typy}
-		{\scriptsize
+\begin{frame}[fragile]\frametitle{Types, swizzling / typy, swizzling}\scriptsize
 \begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
 #version 450
 
@@ -42,13 +50,10 @@ void main(){
   d = ivec4(c,4);
   d = ivec4(c.xx,c.yy);
 }
-		\end{minted}
-		}
+\end{minted}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Jazyk GLSL - vestavěné funkce}
-{\tiny
+\begin{frame}[fragile]\frametitle{Built-in functions / vestavěné funkce}\tiny
 \begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
 abs acos acosh asin asinh atan atanh ceil cos cosh degrees exp exp2 floor fract inversesqrt
 log log2 max min mod modf pow radians round roundEven sign sin sinh sqrt tan tanh trunc
@@ -86,70 +91,58 @@ atomicAdd atomicMin atomicMax atomicAnd atomicOr atomicXor atomicExchange atomic
 imageSize imageLoad imageStore imageAtomicAdd imageAtomicMin imageAtomicMax
 imageAtomicAnd imageAtomicOr imageAtomicXor imageAtomicExchange imageAtomicCompSwap
 \end{minted}
-}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Jazyk GLSL - kvalifikátory proměnných}
-{\tiny
+\begin{frame}[fragile]\frametitle{Variable qualifiers / kvalifikátory proměnných}\tiny
 \begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
 #version 450
 
-//promenna a je plnena predchazejici shader stage nebo
-//z bufferu GL_ARRAY_BUFFER
+//data comes from previous stage (or buffer in case of vertex shaders)
 //read only
 in vec4 a;
 
-//hodnota b bude viditelna v dalsi shader stage nebo
-//ve framebufferu
-//write only
+//data is sent to next stage
 out vec4 b;
 
-//hodnoty promennych a,b se meni s kazdou invokaci shaderu
+//a,b variables are different for every shader invocation
 
-//promenna m je ulozena v konstantni pameti, lze ji vycist 
-//ve vsech shader stage
-//read only
+//data is constant, all threads see the same value, can be set from CPU
 uniform mat4 m;
 
-//hodnota m je nemenna pro vsechny invokace shaderu
-
-//promenna d je typu textury (obrazek), je to opaque type, ktery
-//lze cist jen pomoci specialnich funkci
+//opaque type d (texture), can be accessed through specialized functions
 //read only
 uniform sampler2D d;
 
-//promenna e je lokalni, je ulozena v registru, kazda 
-//invokace shaderu ma svoji vlastni
+//local variable stored in registers 
+//every thread has its own
 vec4 e = vec4(0,1,2,3);
 
 void main(){
   b = e + m * texture(d,a.xy);
 }
 \end{minted}
-}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Jazyk GLSL - důležité vestavěné proměnné}
-Vertex Shader obsahuje několik důležitých vestavěných proměnných
+\begin{frame}[fragile]\frametitle{Vertex Shader built-ins / vestavěné proměnné VS}
+Vertex Shader contains some important built-in variables.\\
+Vertex Shader obsahuje několik důležitých vestavěných proměnných.
 {\scriptsize
 \begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
 #version 450
 
 void main(){
-  //vystupni promenna, sem se zapisuje pozice vrcholu
-  //po perspektivni projekci
+  //output variable - contain position of vertex in clip-space
   vec4 gl_Position;
 
-  //cislo vrcholu
+  //vertex/index number
   in int gl_VertexID;
-  //cislo instsance
+  //instance number
   in int gl_InstanceID;
-  //cislo draw callu
+  //draw call number
   in int gl_DrawID;
-  //velikost primitiva typu bod
+  //point size
   out float gl_PointSize;
+  //distance to custom clip plane
   out float gl_ClipDistance[];
   out float gl_CullDistance[];
 }
@@ -159,31 +152,30 @@ void main(){
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Jazyk GLSL - důležité vestavěné proměnné}
-Fragment Shader obsahuje několik důležitých vestavěných proměnných.
+\frametitle{Fragment built-ins / vestavěné progměnné FS}
+Output of fragment shader is specified manually.\\
 Výstup fragment shaderu si specifikuje programátor pomocí vlastní výstupní proměnné.
 {\scriptsize
 \begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
 #version 450
 
-//vlastni vystup, namapuje se na 0. barevny framebuffer
+//output, 0. color buffer of framebuffer
 layout(location=0)out vec4 fColor;
 
 void main(){
-  //coordinaty fragmentu ve viewportu
+  //fragment coordinates (x,y in screen resolution)
   in vec4 gl_FragCoord;
 
-  //vznikl fragment z privracene strany primitiva
+  //Was this fragment rasterized from front facing side of a triangle?
   in bool gl_FrontFacing;
 
-  //pro modifikaci hloubky fragmentu
-  //pri zapisu vypina brzky depth test
+  //this variable can modify depth of fragment.
+  //writes disable early depth test (can be re-enabled)
   out float gl_FragDepth;
 
   in float gl_ClipDistance[];
   in float gl_CullDistance[];
   in int gl_PrimitiveID;
-
 }
 
 \end{minted}

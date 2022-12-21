@@ -2,19 +2,19 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="500.67737"
    height="216.22527"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="cpp_and_glsl.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
     <marker
@@ -40,8 +40,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="222.16205"
-     inkscape:cy="114.36385"
+     inkscape:cx="221.98102"
+     inkscape:cy="114.14724"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -50,10 +50,11 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1919"
-     inkscape:window-height="1051"
+     inkscape:window-height="1046"
      inkscape:window-x="1"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -62,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -87,28 +88,28 @@
              id="rect2985-7"
              style="color:#000000;fill:#ffaaaa;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="125%"
              id="text3759"
              y="363.93015"
              x="190.85144"
-             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
              xml:space="preserve"><tspan
                y="363.93015"
                x="190.85144"
                id="tspan3761"
-               sodipodi:role="line">CPU</tspan></text>
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif">CPU</tspan></text>
         </g>
         <text
            xml:space="preserve"
-           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="95.000008"
            y="181.29077"
-           id="text3791"
-           sodipodi:linespacing="125%"><tspan
+           id="text3791"><tspan
              sodipodi:role="line"
              id="tspan3793"
              x="95.000008"
-             y="181.29077">C++</tspan></text>
+             y="181.29077"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif">C++</tspan></text>
         <g
            id="g3864"
            transform="translate(-121.78571,-23.214286)">
@@ -127,48 +128,52 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="101.06911"
            y="212.03398"
-           id="text3807"
-           sodipodi:linespacing="125%"><tspan
+           id="text3807"><tspan
              sodipodi:role="line"
              id="tspan3809"
              x="101.06911"
              y="212.03398"
-             style="fill:#ff00ff">#include&lt;iostream&gt;</tspan><tspan
+             style="font-size:12px;line-height:1.25;font-family:sans-serif;fill:#ff00ff">#include&lt;iostream&gt;</tspan><tspan
              sodipodi:role="line"
              x="101.06911"
              y="227.03398"
-             id="tspan3819"><tspan
-   style="fill:#008000"
+             id="tspan3819"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
+   style="font-family:sans-serif;fill:#008000"
    id="tspan3825">int</tspan> main(<tspan
-   style="fill:#008000"
+   style="font-family:sans-serif;fill:#008000"
    id="tspan3827">int</tspan> argc,<tspan
-   style="fill:#008000"
+   style="font-family:sans-serif;fill:#008000"
    id="tspan3829">char</tspan>*argv[]){</tspan><tspan
              sodipodi:role="line"
              x="101.06911"
              y="242.03398"
-             id="tspan3813"><tspan
-   style="fill:#0000ff"
+             id="tspan3813"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
+   style="font-family:sans-serif;fill:#0000ff"
    id="tspan4647">  glCompileShader</tspan>(shaderID);</tspan><tspan
              sodipodi:role="line"
              x="101.06911"
              y="257.034"
-             id="tspan3815"><tspan
-   style="fill:#0000ff"
+             id="tspan3815"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
+   style="font-family:sans-serif;fill:#0000ff"
    id="tspan3833">  glLinkProgram</tspan>(programID);</tspan><tspan
              sodipodi:role="line"
              x="101.06911"
              y="272.034"
-             id="tspan3817"><tspan
-   style="fill:#0000ff"
+             id="tspan3817"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
+   style="font-family:sans-serif;fill:#0000ff"
    id="tspan4645">  glUseProgram</tspan>(programID);</tspan><tspan
              sodipodi:role="line"
              x="101.06911"
              y="287.034"
-             id="tspan3811">}</tspan></text>
+             id="tspan3811"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif">}</tspan></text>
         <g
            id="g4040">
           <path
@@ -184,19 +189,20 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="229.30463"
            y="329.09296"
-           id="text4068"
-           sodipodi:linespacing="125%"><tspan
+           id="text4068"><tspan
              sodipodi:role="line"
              id="tspan4070"
              x="229.30463"
-             y="329.09296">jedna instance</tspan><tspan
+             y="329.09296"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif">one instasnce</tspan><tspan
              sodipodi:role="line"
              x="229.30463"
              y="344.09296"
-             id="tspan4074">programu</tspan></text>
+             id="tspan4074"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif">of program</tspan></text>
       </g>
       <g
          transform="translate(34,0)"
@@ -213,31 +219,31 @@
              id="rect2985"
              style="color:#000000;fill:#ffdd55;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="125%"
              id="text3755"
              y="371.46512"
              x="431.03421"
-             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
              xml:space="preserve"><tspan
                y="371.46512"
                x="431.03421"
                id="tspan3757"
-               sodipodi:role="line">GPU</tspan></text>
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif">GPU</tspan></text>
         </g>
         <g
            id="g3987"
            transform="translate(0,0.446304)">
           <text
-             sodipodi:linespacing="125%"
              id="text3795"
              y="179.45715"
              x="323.68015"
-             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
              xml:space="preserve"><tspan
                y="179.45715"
                x="323.68015"
                id="tspan3797"
-               sodipodi:role="line">GLSL</tspan></text>
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif">GLSL</tspan></text>
           <path
              sodipodi:nodetypes="ccccccc"
              inkscape:connector-curvature="0"
@@ -251,13 +257,12 @@
              d="m 516.24672,184.58281 31.43263,13.59837"
              style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
           <text
-             sodipodi:linespacing="125%"
              id="text3887"
              y="201.81374"
              x="330.31989"
-             style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
              xml:space="preserve"><tspan
-               style="fill:#ff00ff"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif;fill:#ff00ff"
                y="201.81374"
                x="330.31989"
                id="tspan3889"
@@ -265,41 +270,47 @@
                id="tspan3901"
                y="216.81374"
                x="330.31989"
-               sodipodi:role="line"><tspan
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
    id="tspan3903"
-   style="fill:#008000">layout</tspan>(<tspan
+   style="font-family:sans-serif;fill:#008000">layout</tspan>(<tspan
    id="tspan3905"
-   style="fill:#ff6600">location</tspan>=<tspan
+   style="font-family:sans-serif;fill:#ff6600">location</tspan>=<tspan
    id="tspan3921"
-   style="fill:#ff0000">0</tspan>)<tspan
+   style="font-family:sans-serif;fill:#ff0000">0</tspan>)<tspan
    id="tspan3913"
-   style="fill:#008000">in vec4</tspan> position;</tspan><tspan
+   style="font-family:sans-serif;fill:#008000">in vec4</tspan> position;</tspan><tspan
                id="tspan3891"
                y="231.81374"
                x="330.31989"
-               sodipodi:role="line"><tspan
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
    id="tspan3907"
-   style="fill:#008000">uniform mat4</tspan> mvp;</tspan><tspan
+   style="font-family:sans-serif;fill:#008000">uniform mat4</tspan> mvp;</tspan><tspan
                id="tspan3893"
                y="246.81374"
                x="330.31989"
-               sodipodi:role="line" /><tspan
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif"> </tspan><tspan
                id="tspan3895"
                y="261.81372"
                x="330.31989"
-               sodipodi:role="line"><tspan
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
    id="tspan3915"
-   style="fill:#008000">void</tspan> main(){</tspan><tspan
+   style="font-family:sans-serif;fill:#008000">void</tspan> main(){</tspan><tspan
                id="tspan3899"
                y="276.81372"
                x="330.31989"
-               sodipodi:role="line"><tspan
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif"><tspan
    id="tspan3919"
-   style="fill:#008000">  gl_Position</tspan> = mvp * position;</tspan><tspan
+   style="font-family:sans-serif;fill:#008000">  gl_Position</tspan> = mvp * position;</tspan><tspan
                id="tspan3897"
                y="291.81372"
                x="330.31989"
-               sodipodi:role="line">}</tspan></text>
+               sodipodi:role="line"
+               style="font-size:12px;line-height:1.25;font-family:sans-serif">}</tspan></text>
         </g>
         <g
            transform="translate(228.92583,-1.0101533)"
@@ -317,19 +328,25 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="461.63971"
            y="327.57773"
-           id="text4078"
-           sodipodi:linespacing="125%"><tspan
+           id="text4078"><tspan
              sodipodi:role="line"
              id="tspan4080"
              x="461.63971"
-             y="327.57773">spousta instancí</tspan><tspan
+             y="327.57773"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif">many instances</tspan><tspan
              sodipodi:role="line"
              x="461.63971"
              y="342.57773"
-             id="tspan4082">programu</tspan></text>
+             style="font-size:12px;line-height:1.25;font-family:sans-serif"
+             id="tspan2874">(threads) of</tspan><tspan
+             sodipodi:role="line"
+             x="461.63971"
+             y="357.57773"
+             id="tspan4082"
+             style="font-size:12px;line-height:1.25;font-family:sans-serif">program</tspan></text>
       </g>
       <path
          sodipodi:nodetypes="cc"
@@ -338,27 +355,27 @@
          d="m 224.64286,366.6479 223.21428,0"
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
       <text
-         sodipodi:linespacing="125%"
          id="text4592"
          y="363.07645"
          x="327.14285"
-         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="363.07645"
            x="327.14285"
            id="tspan4594"
-           sodipodi:role="line">PCIe</tspan></text>
+           sodipodi:role="line"
+           style="font-size:12px;line-height:1.25;font-family:sans-serif">PCIe</tspan></text>
       <text
-         sodipodi:linespacing="125%"
          id="text4596"
          y="382.36218"
          x="278.21426"
-         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="382.36218"
            x="278.21426"
            id="tspan4598"
-           sodipodi:role="line">řízení, spouštění úloh</tspan></text>
+           sodipodi:role="line"
+           style="font-size:12px;line-height:1.25;font-family:sans-serif">control, execution of tasks</tspan></text>
     </g>
   </g>
 </svg>

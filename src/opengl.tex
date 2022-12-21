@@ -1,57 +1,54 @@
 \bluepage{OpenGL}
 
-\begin{frame}\frametitle{OpenGL}
-\scriptsize
+\begin{frame}\frametitle{OpenGL}\scriptsize
 \begin{itemize}
-\item OpenGL Open Graphics Language (Library) 
+\item OpenGL -- Open Graphics Language (Library). 
 \item OpenGL is API for 3D graphics and general purpose computing (GPGPU).
-\item It's origin is IrisGL by SGI
-\item Multiplatform
-\item Can be used from almost any language .
-\item OpenGL shading language
+\item Its origin is IrisGL by SGI.
+\item Multiplatform.
+\item Can be used from almost any language.
+\item GLSL - OpenGL shading language.
 \end{itemize}
 
 \begin{itemize}
-\item OpenGL Open Graphics Language (Library) 
+\item OpenGL -- Open Graphics Language (Library).
 \item OpenGL je API pro 3D grafiku a obecké výpočty na GPU.
-\item Vychází z IrisGL od SGI 
-\item Platformně nezávislé 
-\item Použitelné skoro z každého jazyka 
-\item Obsahuje vlastní jazyk GLSL pro programování GPU
+\item Vychází z IrisGL od SGI.
+\item Platformně nezávislé.
+\item Použitelné skoro z každého jazyka.
+\item Obsahuje vlastní jazyk GLSL pro programování GPU.
 \end{itemize}
   \begin{figure}[h]
   \includegraphics[width=5cm,keepaspectratio]{pics/opengl/logo}
   \end{figure}
 \end{frame}
 
-\begin{frame}\frametitle{Why to use OpenGL / OpenGL - proč používat?}
-\scriptsize
+\begin{frame}\frametitle{Why to use OpenGL / OpenGL - proč používat?}\scriptsize
 \begin{itemize}
-  \item{Linux, Window, Mac Os X, Android,...}
-  \item{C, C++, Python, Java, Javascript, ...}
-  \item{OpenGL is backward compatible}
-  \item{OpenGL is low levels API (not as low as Vulkan)}
-  \item{OpenGL has simple API}
-  \item{OpenGL is fast (if used properly)}
-  \item{OpenGL is open industrial standard}
-  \item{WebGL}
+  \item Linux, Window, Mac Os X, Android,...
+  \item C, C++, Python, Java, Javascript, ...
+  \item OpenGL is backward compatible.
+  \item OpenGL is low levels API (not as low as Vulkan).
+  \item OpenGL has simple API.
+  \item OpenGL is fast (if used properly).
+  \item OpenGL is open industrial standard.
+  \item WebGL.
 \end{itemize}
 
 \begin{itemize}
-  \item{OpenGL je multiplatformní - Linux, Window, Mac Os X, Android,...}
-  \item{OpenGL lze použít téměř z každého jazyka - C, C++, Python, Java, Javascript, ...}
-  \item{OpenGL je zpětně kompatibilní}
-  \item{OpenGL je nízkoúrovňové (Vulkan je nízko úrovňovější)}
-  \item{OpenGL má jednoduché API}
-  \item{OpenGL je rychlé (když se správně použije)}
-  \item{OpenGL je otevřený industriální standard}
-  \item{WebGL}
+  \item OpenGL je multiplatformní - Linux, Window, Mac Os X, Android,...
+  \item OpenGL lze použít téměř z každého jazyka - C, C++, Python, Java, Javascript, ...
+  \item OpenGL je zpětně kompatibilní.
+  \item OpenGL je nízkoúrovňové (Vulkan je nízko úrovňovější).
+  \item OpenGL má jednoduché API.
+  \item OpenGL je rychlé (když se správně použije).
+  \item OpenGL je otevřený industriální standard.
+  \item WebGL.
 \end{itemize}
 \end{frame}
 
 
-\begin{frame}\frametitle{OpenGL versions / Verze OpenGL}
-  \scriptsize{
+\begin{frame}\frametitle{OpenGL versions / Verze OpenGL}\scriptsize
 \begin{itemize}
 \item{OpenGL}
 \begin{itemize}\scriptsize
@@ -79,21 +76,19 @@
 \end{itemize}
 
 \end{itemize}
-  }
 \end{frame}
 
-\begin{frame}\frametitle{OpenGL}
-\scriptsize
+\begin{frame}\frametitle{OpenGL}\scriptsize
 \begin{itemize}
-  \item OpenGL architecture is client-server
-  \item Application runs on CPU and calls OpenGL function to access GPU
-  \item Command Queue is hidden
+  \item OpenGL has client-server architecture.
+  \item Application runs on CPU and calls OpenGL function to access GPU.
+  \item Command Queue between CPU and GPU is hidden.
 \end{itemize}
 
 \begin{itemize}
-  \item OpenGL je architektura klient server
-  \item Aplikace běží na CPU a využívá OpenGL pro přístup k GPU
-  \item Front příkazů mezi CPU a GPU je skryta
+  \item OpenGL je architektura klient server.
+  \item Aplikace běží na CPU a využívá OpenGL pro přístup k GPU.
+  \item Fronta příkazů mezi CPU a GPU je skryta.
 \end{itemize}
 \begin{figure}[h]
   \includegraphics[width=10cm,keepaspectratio]{pics/opengl/clientserver}
@@ -110,22 +105,22 @@
 \begin{frame}\frametitle{OpenGL API}
 \scriptsize
 \begin{itemize}
-  \item Siple interface / Jednoduché rozhraní
+  \item Simple interface / Jednoduché rozhraní
     \begin{itemize}\scriptsize
-      \item Only C functions / Pouze C funkce
-      \item Data in form of numbers and arrays / Data jsou jen čísla a pole
-      \item No structures, classes / Žádné struct, class
+      \item Only C functions / Pouze C funkce.
+      \item Data in form of numbers and arrays / Data jsou jen čísla a pole.
+      \item No structures, classes / Žádné struct, class.
     \end{itemize}
   \item State machine / Stavový stroj
     \begin{itemize}\scriptsize
-      \item Most of the commands set the state of pipeline / Většina příkazů nastavuje stav pipeline
-      \item State cannot change on its own / Stav se sám nemění
+      \item Most of the commands set the state of pipeline / Většina příkazů nastavuje stav pipeline.
+      \item State cannot change on its own / Stav se sám nemění.
     \end{itemize}
   \item OpenGL (Rendering) Context
     \begin{itemize}\scriptsize
-      \item Main object of OpenGL / Hlavní objekt OpenGL
-      \item Must be created outside of OpenGL / Mimo OpenGL (WGL/GLX)
-      \item Encapsulates data, state, connection to the output / Zapouzdřuje data, stav, napojení na výstup
+      \item Main object of OpenGL / Hlavní objekt OpenGL.
+      \item Must be created outside of OpenGL / Mimo OpenGL (SDL2/GLTF/WGL/GLX).
+      \item Encapsulates data, state, connection to the output / Zapouzdřuje data, stav, napojení na výstup.
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -153,7 +148,7 @@ GLvoid glUniform2fv(GLuint,GLfloat*);
 \end{minted}
 \end{frame}
 
-\begin{frame}\frametitle{Příkazy a typy}
+\begin{frame}\frametitle{Command types / Příkazy a typy}
 \scriptsize
 OpenGL commands can be divided into several groups.
 \begin{itemize}
@@ -161,12 +156,12 @@ OpenGL commands can be divided into several groups.
   \item \textbf{Execution commands (draw commands, compute commands)}
   \item \textbf{State commands (set OpenGL state)}
   \item Debug commands
-  \item Framebuffer commands
+  \item Framebuffer Commands
   \item Synchronization commands (glFinish)
   \item Util commands
 \end{itemize}
 
-OpenGL příkazy lze rozdělit do několika skupin
+OpenGL příkazy lze rozdělit do několika skupin:
 \begin{itemize}
   \item \textbf{Příkazy pro správu OpenGL objektů (10 hlavních OpenGL objektů)}
   \item \textbf{Exekuční příkazy (kreslící a výpočetní příkazy)}
@@ -213,20 +208,20 @@ OpenGL příkazy lze rozdělit do několika skupin
 \scriptsize
   For drawing, it is necessary to initialize several OpenGL objects (Shaders, Shader Programs, Buffers, Vertex Arrays), set OpenGL state and execute draw command.
   \begin{enumerate}
-    \item Compile and link shader programs from string
-    \item Allocate buffers and copy data from CPU
-    \item Setup vertex array object to tell OpenGL about the layout of the data in buffers
-    \item Setup OpenGL state
-    \item Execute draw call
+    \item Compile and link shader programs from string.
+    \item Allocate buffers and copy data from CPU.
+    \item Setup vertex array object to tell OpenGL about the layout of the data in buffers.
+    \item Setup OpenGL state.
+    \item Execute draw call.
   \end{enumerate}
 
   Pro kreslení je potřeba inicializovat několik OpenGL objektů (Shadery, Shader Programy, Buffery, Vertex Array objekty), nastavit OpenGL stav a zavolat kreslící příkazy.
   \begin{enumerate}
-    \item Zkompilování a slikování shader programů z řetězce
-    \item Alokace bufferu a nakopírování dat z CPU
-    \item Nastavení vertex array tak, aby popisoval formát dat v bufferech
-    \item Nastavení OpenGL stavu
-    \item Spuštění kreslícího příkazu
+    \item Zkompilování a slikování shader programů z řetězce.
+    \item Alokace bufferu a nakopírování dat z CPU.
+    \item Nastavení vertex array tak, aby popisoval formát dat v bufferech.
+    \item Nastavení OpenGL stavu.
+    \item Spuštění kreslícího příkazu.
   \end{enumerate}
 \end{frame}
 

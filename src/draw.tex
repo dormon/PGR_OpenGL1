@@ -1,46 +1,56 @@
-\bluepage{Kreslení a uniformní proměnné}
+\bluepage{Rendering and uniform variables / Kreslení a uniformní proměnné}
 
-\begin{frame}[fragile]
-\frametitle{Uniformní proměnné}
+\begin{frame}[fragile]\frametitle{Uniform variables / Uniformní proměnné}
+  \scriptsize
   \begin{itemize}
-  \item Uniformní proměnné jsou uloženy v konstantní paměti
-  \item Narozdíl od vertex atributů se v průběhu kreslení nemění
-  \item Každá invokace shaderu adresuje stejnou hodnotu
-  \item Uniformní proměnné lze využít ve všech shader stage
-  \item Uniformní proměnné jsou vhodné například pro uložení matic, barvy, světla
-  \item Stejně jako objekty v OpenGL zastupuje integerová hodnota, tak i každá uniformní proměnná má svoje integerové jméno
-  \item Toto jméno lze získat z Shader Programu pomocí specializovaných funkcí
+  \item Uniform variables are stored in constant memory on GPU.
+  \item Their values remain contant during rendering.
+  \item Uniform variables can be used in all shader stages.
+  \item Uniform variables are suitable for matrices, colors, lights, ...
+  \item Uniform variables are represented as integer handles on CPU side.
+  \end{itemize}
+
+  \begin{itemize}
+  \item Uniformní proměnné jsou uloženy v konstantní paměti.
+  \item Narozdíl od vertex atributů se v průběhu kreslení nemění.
+  \item Každá invokace shaderu adresuje stejnou hodnotu.
+  \item Uniformní proměnné lze využít ve všech shaderech.
+  \item Uniformní proměnné jsou vhodné například pro uložení matic, barvy, světla.
+  \item Stejně jako objekty v OpenGL zastupuje integerová hodnota, tak i každá uniformní proměnná má svoje integerové jméno.
+  \item Toto jméno lze získat z Shader Programu pomocí specializovaných funkcí.
   \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Způsob využívání uniformních proměnných}
+\begin{frame}[fragile]\frametitle{Usage / Způsob využívání}\scriptsize
+
   \begin{enumerate}
-  \item Vytvoření Shader Programu
-  \item Získání integerového jména pomocí jména proměnné v shaderu
-  \item Aktivování Shader Programu
-  \item Nahrání dat pomocí vhodné OpenGL funkce
+  \item Create shader program.
+  \item Get integer handle using the variable name.
+  \item Use shader program.
+  \item Set variable data using the handle and specialized function.
+  \end{enumerate}
+
+  \begin{enumerate}
+  \item Vytvoření Shader Programu.
+  \item Získání integerového jména pomocí jména proměnné v shaderu.
+  \item Aktivování Shader Programu.
+  \item Nahrání dat pomocí vhodné OpenGL funkce.
   \end{enumerate}
 {\scriptsize
 \begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
-GLuint program = 0;
-GLint  colorUniform = -1;
 void init(){
-  //sestaveni programu
-  program = createProgram(
-      compileShader(GL_VERTEX_SHADER  ,loadFile("flag.vp")),
-      compileShader(GL_FRAGMENT_SHADER,loadFile("flag.fp")));
-  //ziskani integeroveho jmena z promenne "color" v shaderu
-  colorUniform = glGetUniformLocation(program,"color");
+  GLuint program = createProgram(
+      createShader(GL_VERTEX_SHADER  ,loadFile("flag.vp")),
+      createShader(GL_FRAGMENT_SHADER,loadFile("flag.fp")));
+  GLuint colorUniform = glGetUniformLocation(program,"color");//get integer handle
 }
 \end{minted}
 }
 {\scriptsize
 \begin{minted}[bgcolor=bg]{packages/graphics.py:GLShaderLexer -x}
 #verion 450
-
 layout(location=0)out vec4 fColor;
-uniform vec3 color;//uniformni promenna
+uniform vec3 color;//uniformn variable
 void main(){
   fColor = vec4(color,1);
 }
@@ -49,36 +59,39 @@ void main(){
 \end{frame}
 
 
-\begin{frame}[fragile]
-\frametitle{Vykreslení dat}
+\begin{frame}[fragile]\frametitle{Drawing / Vykreslení dat}
+  \scriptsize
   \begin{enumerate}
-  \item Aktivování programu
-  \item Nastavení uniformních proměnných
-  \item Aktivování Vertex Array Objectu
-  \item Zavolání vykreslovacího příkazu
+  \item Active Vertex Array object.
+  \item Activate shader program.
+  \item Set uniform variables.
+  \item Call draw function.
+  \end{enumerate}
+
+  \begin{enumerate}
+  \item Aktivování programu.
+  \item Nastavení uniformních proměnných.
+  \item Aktivování Vertex Array objektu.
+  \item Zavolání vykreslovacího příkazu.
   \end{enumerate}
 {\scriptsize
 \begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
 void draw(){
-  //vymazani barevneho framebuffer
+  //clear framebuffer
   glClear(GL_COLOR_BUFFER_BIT);
 
-  //aktivovani program
+  //activate program
   glUseProgram(program);
 
-  //nastaveni uniformni promenne
+  //set uniform variables
   glProgramUniform3fv(program,colorUniform,1,0,0);
 
-  //aktivovani vao
+  //activate VAO
   glBindVertexArray(vao);
 
-  glDrawArrays(//vykresleni
-    GL_TRIANGLES,//typ primitiva
-    0,//prvni Vertex
-    3);//pocet Vertexu pro vykresleni 3 -> 1 trojuhelnik
-
-  //deaktivovani vao
-  glBindVertexArray(0);
+  //call draw call, primitive type, first vertex, nof vertices
+  glDrawArrays(GL_TRIANGLES,0,3);
+}
 \end{minted}
 }
 \end{frame}

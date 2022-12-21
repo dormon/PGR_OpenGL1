@@ -1,75 +1,83 @@
-\bluepage{OpenGL kontext, knihovny}
+\bluepage{OpenGL context, libraries / kontext, knihovny}
 
-
-\begin{frame}
-\frametitle{Knihovny}
-  \textbf{SDL} - Simple Directmedia Layer
+\begin{frame}\frametitle{Libraries / Knihovny}\scriptsize
+  \textbf{SDL2} - Simple Directmedia Layer
   \begin{itemize}
+    \item IO, windows, sounds, threads, ...
     \item IO, okna, zvuky, vlákna, ...
   \end{itemize}
   \textbf{GLM} - GL mathematics
   \begin{itemize}
+    \item Vector algebra, useful matematics
     \item Práce s vektory a maticemi
   \end{itemize}
   \textbf{GLEW} - OpenGL Extension Wrangler
   \begin{itemize}
+    \item OpenGL extensions
     \item OpenGL rozšíření
   \end{itemize}
-  GLUT - GL Utility Toolkit (IO, okna, ...)\\
   GLEE - GL Easy Extension library\\
-  GLAUX - GL Auxiliary Library (IO, okna, ...)\\
-  GLFW - (IO, okna, ...)
+  GLFW - (IO, windows, ...)\\
+  GEGL - FIT OpenGL C++ library\\
+  STBi - image loading\\
+  Imgui - OpenGL gui\\
+  tiny gltf - gltf model loader
 \end{frame}
 
-\begin{frame}
-\frametitle{OpenGL - rozšíření}
+\begin{frame}\frametitle{Extensions / rozšíření}\scriptsize
   \begin{itemize}
     \item{glext.h}
     \item{void*wglGetProcAddress(const char*name);}
     \item{void*glXGetProcAddress(const char*name);}
-    \item{PFNGL{\it NECO}PROC glNeco=(PFN...)wglGetProcAddress("glNeco");}
+    \item{PFNGL{\it NECO}PROC glNeco=(PFN...)wglGetProcAddress("glSomething");}
     \item{glGetString(GL\_EXTENSIONS);}
     \item{GL\_XYZ\_name}
     \item{GL\_ARB\_multisample}
     \item{GL\_EXT\_blend\_func\_separate}
     \item{IBM,NV,ATI,SGIS,...}
-    \item{GLEE/GLEW}
+    \item{GLEE/GLEW/GEGL/...}
   \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{OpenGL kontext}
+\begin{frame}[fragile]\frametitle{OpenGL kontext}\scriptsize
   \begin{itemize}
-    \item OpenGL kontext zapouzdřuje věškeré nastavení OpenGL
-    \item Zastřešuje všechny objekty (buffer, programy, textury, ...)
-    \item Po jeho uvolnění, nejsou již data na GPU přístupná
-    \item OpenGL kontext není popsán v OpenGL specifikaci a lze jej vytvořit z externích knihoven
-    \item Kontext má svoji verzi (vertex OpenGL), možnost aktivovat debugging, a různe profily
+    \item OpenGL context encapsulates all OpenGL settings.
+    \item It stores all OpenGL objects (buffers, programs, textures, ...).
+    \item After the deletion of OpenGL context, GPU data are no longer available.
+    \item OpenGL context is not described in OpenGL specification, it is possible to create it using extern libraries.
+    \item Context version, context flags, debug context, profiles.
+  \end{itemize}
+  \begin{itemize}
+    \item OpenGL kontext zapouzdřuje věškeré nastavení OpenGL.
+    \item Zastřešuje všechny objekty (buffer, programy, textury, ...).
+    \item Po jeho uvolnění, nejsou již data na GPU přístupná.
+    \item OpenGL kontext není popsán v OpenGL specifikaci a lze jej vytvořit z externích knihoven.
+    \item Kontext má svoji verzi (vertex OpenGL), možnost aktivovat debugging, a různe profily.
   \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Vytvoření kontextu - SDL2}
-	{\scriptsize
+\begin{frame}[fragile]\frametitle{SDL2 context / Vytvoření kontextu - SDL2}\scriptsize
 \begin{minted}[bgcolor=bg]{packages/c_cpp.py:CppLexer -x}
-//vytvoreni okna v SDL2
+SDL_Init(SDL_INIT_VIDEO);//init. video
+
+//create window
+SDL_Window*window = SDL_CreateWindow("sdl2",0,0,1024,768,
+  SDL_WINDOW_OPENGL|SDL_WINDOW_SHOWN);
+
+//setup context parameters
 unsigned version = 450;//context version
 unsigned profile = SDL_GL_CONTEXT_PROFILE_CORE;//context profile
 unsigned flags   = SDL_GL_CONTEXT_DEBUG_FLAG;//context flags
-SDL_Init(SDL_INIT_VIDEO);//init. video
 SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, version/100    );
 SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION,(version%100)/10);
 SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK ,profile         );
 SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS        ,flags           );
 
-SDL_Window*window = SDL_CreateWindow("sdl2",0,0,1024,768,
-  SDL_WINDOW_OPENGL|SDL_WINDOW_SHOWN);
 SDL_GLContext context = SDL_GL_CreateContext(window);//create context
 
 glewExperimental=GL_TRUE;
 glewInit();//initialisation of gl* functions
-	\end{minted}
-	}
+\end{minted}
 \end{frame}
 
 
